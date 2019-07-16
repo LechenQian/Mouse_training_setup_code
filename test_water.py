@@ -4,9 +4,9 @@ from AntCamHW.daq_do.daq_do_dev import DAQSimpleDOTask
 from AntCamHW.daq_di.daq_di_dev import DAQSimpleDITask
 import time
 
-# odor0 = DAQSimpleDOTask('Dev1/port0/line0')
+
 lick = DAQSimpleDITask('Dev2_SELECT/port1/line0')
-# odor0.low()
+
 timeout = time.time() + 100
 
 while time.time() < timeout:
@@ -17,4 +17,3 @@ while time.time() < timeout:
     print(lick.read())
     time.sleep(0.2)
 lick.close()
-# odor0.close()
