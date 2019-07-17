@@ -42,7 +42,7 @@ class AntCamApp(BaseMicroscopeApp):
         #from AntCamMS.spencer_pretraining import NuneTraining
         #self.add_measurement(NuneTraining(self))
         
-        from AntCamMS.nune_training_2P_odor_sound import NuneTraining
+        from AntCamMS.Selina-Contingency import SelinaTraining
         self.add_measurement(NuneTraining(self))
         
 #         from AntCamMS.nune_training_2P_odor_sound_second_half_sated import NuneTraining

@@ -50,7 +50,7 @@ class SubMeasurementQThread(MeasurementQThread):
         self.interrupted = True
 
 
-class NuneTraining(Measurement):
+class SelinaTraining(Measurement):
     # this is the name of the measurement that ScopeFoundry uses
     # when displaying your measurement and saving data related to it
     name = "nune_training"
