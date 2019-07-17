@@ -100,6 +100,8 @@ class SelinaTraining(Measurement):
         self.wide_cam.settings.frame_rate.update_value(8)
         self.wide_cam.read_from_hardware()
 
+
+
     def setup_figure(self):
         """
         Runs once during App initialization, after setup()
