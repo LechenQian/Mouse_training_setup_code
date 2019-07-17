@@ -9,7 +9,7 @@ class AntCamApp(BaseMicroscopeApp):
 
     # this is the name of the microscope that ScopeFoundry uses 
     # when storing data
-    name = 'Nune_Imaging'
+    name = 'Selina_Contingency'
     
     # You must define a setup function that adds all the 
     #capablities of the microscope and sets default settings
@@ -42,8 +42,8 @@ class AntCamApp(BaseMicroscopeApp):
         #from AntCamMS.spencer_pretraining import NuneTraining
         #self.add_measurement(NuneTraining(self))
         
-        from AntCamMS.Selina-Contingency import SelinaTraining
-        self.add_measurement(NuneTraining(self))
+        from AntCamMS.Selina_Contingency import SelinaTraining
+        self.add_measurement(SelinaTraining(self))
         
 #         from AntCamMS.nune_training_2P_odor_sound_second_half_sated import NuneTraining
 #         self.add_measurement(NuneTraining(self))
