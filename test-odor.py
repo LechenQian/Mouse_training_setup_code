@@ -4,6 +4,9 @@ from AntCamHW.daq_do.daq_do_dev import DAQSimpleDOTask
 from AntCamHW.daq_di.daq_di_dev import DAQSimpleDITask
 import time
 
+
+
+
 odor0 = DAQSimpleDOTask('Dev1/port0/line1')
 # lick = DAQSimpleDITask('Dev2_SELECT/port1/line0')
 odor0.low()
