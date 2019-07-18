@@ -1,0 +1,7 @@
+2019-07-17T21:38:57|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 63, in <module>
+    app.hardware['wide_cam'].connected.update_value(True)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\helper_funcs.py", line 31, in __getitem__
+    return self._odict[key]
+KeyError: 'wide_cam'
+

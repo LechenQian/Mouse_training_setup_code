@@ -1,0 +1,13 @@
+2019-07-17T21:32:57|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 61, in <module>
+    app = AntCamApp(sys.argv)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 334, in __init__
+    self.setup_default_ui()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 365, in setup_default_ui
+    measure.setup_figure()
+  File "C:\Users\MurthyLab\Desktop\AntCam-master\AntCamMS\Selina_Contingency.py", line 128, in setup_figure
+    self.wide_cam_view.addItem(frame)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ViewBox\ViewBox.py", line 399, in addItem
+    if item.zValue() < self.zValue():
+AttributeError: 'numpy.ndarray' object has no attribute 'zValue'
+

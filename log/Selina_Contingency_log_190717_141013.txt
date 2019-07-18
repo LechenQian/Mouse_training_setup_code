@@ -1,0 +1,13 @@
+2019-07-17T14:10:13|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 61, in <module>
+    app = AntCamApp(sys.argv)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 28, in setup
+    from AntCamHW.flircam.flirrec_hw import FLIRRecHW
+  File "C:\Users\MurthyLab\Desktop\AntCam-master\AntCamHW\flircam\flirrec_hw.py", line 8, in <module>
+    from AntCamHW.flircam.flirrec_dev import FLIRRecDev
+  File "C:\Users\MurthyLab\Desktop\AntCam-master\AntCamHW\flircam\flirrec_dev.py", line 6, in <module>
+    import PySpin
+ModuleNotFoundError: No module named 'PySpin'
+
