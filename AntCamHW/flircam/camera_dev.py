@@ -11,10 +11,10 @@ in a Python list.
 class CameraDev(object):
     
     def __init__(self,camera_id):
-        self.camera_id=camera_id
-        self.cap=cv2.VideoCapture(self.camera_id)
+        self.camera_id = camera_id
+        self.cap = cv2.VideoCapture(self.camera_id)
         self.fpath=""
-        ret,self.frame=self.cap.read()
+        ret, self.frame = self.cap.read()
     
     def open(self):
         self.cap.open(self.camera_id)

@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f2a68146-ff45-4091-800b-ff455ee02d53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AntCamMS/2019-7-17-test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/2019-7-17-test.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AntCamHW/flircam/camera_dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamHW/flircam/camera_dev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AntCamHW/flircam/camera_hw.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamHW/flircam/camera_hw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cam.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_water.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_water.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AntCamMS/nune_training_2P_odor_sound.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5346">
-              <caret line="216" column="51" selection-start-line="216" selection-start-column="51" selection-end-line="216" selection-end-column="51" />
+            <state relative-caret-position="553">
+              <caret line="201" column="11" lean-forward="true" selection-start-line="201" selection-start-column="11" selection-end-line="201" selection-end-column="11" />
               <folding>
                 <element signature="e#51#87#0" expanded="true" />
               </folding>
@@ -29,52 +30,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AntCamHW/flircam/flircam_dev.py">
+        <entry file="file://$PROJECT_DIR$/cam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2839">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding>
-                <element signature="e#50#68#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_water.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AntCamHW/flircam/camera_hw.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cam.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="13" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="173">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -82,17 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_Contingency.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1768">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AntCamMS/simplified_contingency.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1468">
-              <caret line="141" column="25" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
+            <state relative-caret-position="7055">
+              <caret line="434" column="101" selection-start-line="434" selection-start-column="101" selection-end-line="434" selection-end-column="101" />
             </state>
           </provider>
         </entry>
@@ -111,6 +70,7 @@
       <find>hardware</find>
       <find>random</find>
       <find>OdorOnCopy</find>
+      <find>read</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,19 +84,21 @@
         <option value="$PROJECT_DIR$/AntCamMS/Selina-Contingency.py" />
         <option value="$PROJECT_DIR$/AntCamHW/flircam/flircam_dev.py" />
         <option value="$PROJECT_DIR$/AntCamHW/flircam/flirrec_dev.py" />
-        <option value="$PROJECT_DIR$/cam.py" />
-        <option value="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" />
         <option value="$PROJECT_DIR$/test-odor.py" />
-        <option value="$PROJECT_DIR$/main_interface.py" />
-        <option value="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" />
         <option value="$PROJECT_DIR$/test_water.py" />
+        <option value="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" />
+        <option value="$PROJECT_DIR$/AntCamHW/flircam/camera_dev.py" />
+        <option value="$PROJECT_DIR$/main_interface.py" />
+        <option value="$PROJECT_DIR$/AntCamHW/flircam/camera_hw.py" />
+        <option value="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" />
+        <option value="$PROJECT_DIR$/cam.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="225" />
+    <option name="x" value="39" />
     <option name="y" value="29" />
-    <option name="width" value="1400" />
+    <option name="width" value="1839" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -147,7 +109,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,6 +136,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_water">
+  <component name="RunManager" selected="Python.main_interface">
     <configuration name="Selina_Contingency" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="AntCam-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -336,11 +298,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_interface" />
+        <item itemvalue="Python.cam" />
         <item itemvalue="Python.test_water" />
         <item itemvalue="Python.simplified_contingency" />
         <item itemvalue="Python.test-odor" />
-        <item itemvalue="Python.main_interface" />
-        <item itemvalue="Python.cam" />
       </list>
     </recent_temporary>
   </component>
@@ -411,7 +373,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563418522725</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="used for filling tubes with water before experiment. roughly consumes 5 ml water.">
+      <created>1563468472167</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563468472167</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated">
+      <created>1563470000136</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1563470000136</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -424,10 +400,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="225" y="29" width="1400" height="1000" extended-state="0" />
+    <frame x="39" y="29" width="1839" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29094946" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -489,7 +465,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ok" />
     <MESSAGE value="tested all the training modules. haven't get to the UI part yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="tested all the training modules. haven't get to the UI part yet." />
+    <MESSAGE value="used for filling tubes with water before experiment. roughly consumes 5 ml water." />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/Selina-Contingency.py">
@@ -527,11 +505,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AntCamMS/Selina-Contingency.py" />
-    <entry file="file://$PROJECT_DIR$/AntCamHW/flircam/flircam_hw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1130" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AntCamHW/flircam/flirrec_dev.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -543,13 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/ScopeFoundry/base_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="597" column="20" selection-start-line="597" selection-start-column="12" selection-end-line="597" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -579,68 +545,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_water.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AntCamMS/simplified_contingency.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="281" column="23" lean-forward="true" selection-start-line="281" selection-start-column="23" selection-end-line="281" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/ScopeFoundry/base_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5440">
+          <caret line="331" column="9" selection-start-line="331" selection-start-column="9" selection-end-line="331" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AntCamHW/flircam/flircam_hw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AntCamHW/flircam/flircam_dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2839">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="3383">
+          <caret line="200" column="76" selection-start-line="200" selection-start-column="72" selection-end-line="200" selection-end-column="76" />
           <folding>
             <element signature="e#50#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_Contingency.py">
+    <entry file="file://$PROJECT_DIR$/AntCamHW/flircam/camera_hw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1768">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="340">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+          <folding>
+            <element signature="e#48#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_interface.py">
+    <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_Contingency.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="7055">
+          <caret line="434" column="101" selection-start-line="434" selection-start-column="101" selection-end-line="434" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AntCamMS/nune_training_2P_odor_sound.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5346">
-          <caret line="216" column="51" selection-start-line="216" selection-start-column="51" selection-end-line="216" selection-end-column="51" />
+        <state relative-caret-position="553">
+          <caret line="201" column="11" lean-forward="true" selection-start-line="201" selection-start-column="11" selection-end-line="201" selection-end-column="11" />
           <folding>
             <element signature="e#51#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AntCamHW/flircam/camera_hw.py">
+    <entry file="file://$PROJECT_DIR$/AntCamHW/flircam/camera_dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AntCamMS/simplified_contingency.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1468">
-          <caret line="141" column="25" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
+        <state relative-caret-position="43">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="442">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_water.py">
+    <entry file="file://$PROJECT_DIR$/main_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="173">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>

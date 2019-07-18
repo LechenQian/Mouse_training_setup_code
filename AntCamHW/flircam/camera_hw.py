@@ -4,7 +4,7 @@ Created on Aug 9, 2017
 '''
 
 from ScopeFoundry import HardwareComponent
-from VOTAScopeHW.camera.camera_dev import CameraDev
+from AntCamHW.flircam.camera_dev import CameraDev
 
 class CameraHW(HardwareComponent):
     '''
@@ -13,12 +13,13 @@ class CameraHW(HardwareComponent):
     
     name='camera'
 
-    def setup(self,camera_id=0):
-        self.settings.New(name='camera_id',dtype=int,initial=camera_id,ro=False)
-        self.settings.New(name='file_name',dtype=str,initial='D:\Hao\Data\Twitch.avi',ro=True)
+    def setup(self, camera_id=0):
+        self.settings.New(name='camera_id',dtype=int, initial=camera_id,ro=False)
+        #self.settings.New(name='file_name',dtype=str, initial= 'C:\Users\MurthyLab\Test.avi' ,ro=True)
                 
     def connect(self):
-        self._dev=CameraDev(self.settings.camera_id.value())
+
+        self.dev = CameraDev(self.settings.camera_id.value)
         
     def read(self):
         return self._dev.read()

@@ -1,16 +1,21 @@
-import cv2
+import cv2, os
+# os.system("v4l2-ctl -i 5 -s 5")
 
 
 cv2.namedWindow("preview")
 vc = cv2.VideoCapture(0)
-vc.set(cv2.CAP_FFMPEG,True)
-vc.set(cv2.CAP_PROP_FPS,30)
+
+
+# vc.set(cv2.CAP_FFMPEG,True)
+# vc.set(cv2.CAP_PROP_FORMAT,1)
+vc.set(cv2.CAP_PROP_FPS,8)
 if vc.isOpened(): # try to get the first frame
     rval, frame = vc.read()
 else:
     rval = False
 
 while rval:
+
     rval, frame = vc.read()
 
     cv2.imshow("preview", frame)

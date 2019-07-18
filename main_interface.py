@@ -19,9 +19,9 @@ class AntCamApp(BaseMicroscopeApp):
         
         #Add hardware components
         print("Adding Hardware Components")
-        from AntCamHW.flircam.camera_hw import  CameraHW
-        wide_cam =  CameraHW(self)
-        wide_cam.settings.camera_sn.update_value('14273815')
+        from AntCamHW.flircam.camera_hw import CameraHW
+        wide_cam = CameraHW(self)
+        # wide_cam.settings.camera_id.update_value(int(0))
         wide_cam.name = 'USB2.0 Video Capture'
         self.add_hardware(wide_cam)
         #

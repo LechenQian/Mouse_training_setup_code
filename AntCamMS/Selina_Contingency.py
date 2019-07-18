@@ -55,35 +55,37 @@ class SelinaTraining(Measurement):
     # when displaying your measurement and saving data related to it
     name = "selina_training"
     interrupt_subthread = QtCore.Signal(())
-    def __init__(self):
-        # EVENT CODES
-        # video recording start / start trial = 101
-        # lick on = 11, lick off = 10
-        # right
-        # airpuff on = 81, off = 80
 
-        # contingency reward odor on = 131, off = 130, water on = 51, right water off = 50
-        # contingency no reward odor on = 141, off = 140, water on = 61, right water off = 60
-        # non-contingency reward odor on = 151, off = 150, water on = 71, right water off = 70
-        # non-contingency no reward odor on = 161, off = 160, water on = 81, right water off = 80
-
-        self.events_filename = '2019-7-17-test.xlsx'
-        self.reward_odor_index = 0
-
-        self.duration_rec_off = 6.5
-        self.duration_rec_on_before = 4  # change this to exponential decay
-        self.duration_odor_to_outcome = 1.3
-        self.duration_water_large = 0.2
-        self.duration_rec_on_after = 8
-        self.duration_odor_on = 0.5
-
-        self.lines = [0, 1, 2, 3]
-        self.counter = np.zeros(len(self.lines))
-
-        self.numtrials = 200
-        self.p_cont_noncont = 0.5
-        self.p_USwCS = 0.5
-        self.p_USwoCS = 0.5
+    # def __init__(self):
+    #     super().__init__()
+    #     # EVENT CODES
+    #     # video recording start / start trial = 101
+    #     # lick on = 11, lick off = 10
+    #     # right
+    #     # airpuff on = 81, off = 80
+    #
+    #     # contingency reward odor on = 131, off = 130, water on = 51, right water off = 50
+    #     # contingency no reward odor on = 141, off = 140, water on = 61, right water off = 60
+    #     # non-contingency reward odor on = 151, off = 150, water on = 71, right water off = 70
+    #     # non-contingency no reward odor on = 161, off = 160, water on = 81, right water off = 80
+    #
+    #     self.events_filename = '2019-7-17-test.xlsx'
+    #     self.reward_odor_index = 0
+    #
+    #     self.duration_rec_off = 6.5
+    #     self.duration_rec_on_before = 4  # change this to exponential decay
+    #     self.duration_odor_to_outcome = 1.3
+    #     self.duration_water_large = 0.2
+    #     self.duration_rec_on_after = 8
+    #     self.duration_odor_on = 0.5
+    #
+    #     self.lines = [0, 1, 2, 3]
+    #     self.counter = np.zeros(len(self.lines))
+    #
+    #     self.numtrials = 200
+    #     self.p_cont_noncont = 0.5
+    #     self.p_USwCS = 0.5
+    #     self.p_USwoCS = 0.5
 
 
 
@@ -128,7 +130,7 @@ class SelinaTraining(Measurement):
         # self.recorder = self.app.hardware['flirrec']
 
         # setup experiment condition
-        self.wide_cam.settings.frame_rate.update_value(8)
+        # self.wide_cam.settings.frame_rate.update_value(8)
         self.wide_cam.read_from_hardware()
 
         # self.vc = cv2.VideoCapture(0)
@@ -236,6 +238,25 @@ class SelinaTraining(Measurement):
         #
         #         #start camera subthread
         #         self.camera_thread.start()
+        self.events_filename = '2019-7-17-test.xlsx'
+        self.reward_odor_index = 0
+
+        self.duration_rec_off = 6.5
+        self.duration_rec_on_before = 4  # change this to exponential decay
+        self.duration_odor_to_outcome = 1.3
+        self.duration_water_large = 0.2
+        self.duration_rec_on_after = 8
+        self.duration_odor_on = 0.5
+
+        self.lines = [0, 1, 2, 3]
+        self.counter = np.zeros(len(self.lines))
+
+        self.numtrials = 200
+        self.p_cont_noncont = 0.5
+        self.p_USwCS = 0.5
+        self.p_USwoCS = 0.5
+
+
 
         odors_cue = OdorGen(self.lines)
         odors_cue.assign_odor()
@@ -276,7 +297,7 @@ class SelinaTraining(Measurement):
 
 
 
-        for t in range(0, numtrials):
+        for t in range(0, self.numtrials):
             print('================================================')
             print('trial number: ', t)
             print()
