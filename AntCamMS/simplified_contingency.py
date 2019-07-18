@@ -138,6 +138,9 @@ class SelinaTraining(Measurement):
 
         odors_cue.initiate()
         odors_cue.close()
+        self.waterR.low()
+        self.waterR.close()
+
         print('FINISHED ASSOCIATION TRAINING')
 
 
