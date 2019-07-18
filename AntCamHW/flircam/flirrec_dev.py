@@ -3,7 +3,7 @@ Created on Mar 29, 2018
 
 @author: Hao Wu
 '''
-import PySpin
+import pyspin as PySpin
 import os
 import time
 class AviType(object):

@@ -21,7 +21,7 @@ import os
 import queue
 from AntCamHW.daq_do.daq_do_dev import DAQSimpleDOTask
 from AntCamHW.daq_di.daq_di_dev import DAQSimpleDITask
-
+import cv2
 from openpyxl import Workbook
 
 
@@ -87,18 +87,22 @@ class SelinaTraining(Measurement):
         self.settings.New('in_trial', dtype=bool, initial=False)
         self.settings.New('view_only', dtype=bool, initial=False)
         self.settings.New('lick_status', dtype=int, initial=0)
-        self.settings.New('play_frequency', dtype=int, initial=0)
+
 
         # Define how often to update display during a run
         self.display_update_period = 0.01
 
         # Convenient reference to the hardware used in the measurement
-        self.wide_cam = self.app.hardware['wide_cam']
-        self.recorder = self.app.hardware['flirrec']
+        self.wide_cam = self.app.hardware['USB2.0 Video Capture']
+        # self.recorder = self.app.hardware['flirrec']
 
         # setup experiment condition
         self.wide_cam.settings.frame_rate.update_value(8)
         self.wide_cam.read_from_hardware()
+
+        # self.vc = cv2.VideoCapture(0)
+        # self.vc.set(cv2.CAP_FFMPEG, True)
+        # self.vc.set(cv2.CAP_PROP_FPS, 30)
 
 
 
@@ -118,6 +122,7 @@ class SelinaTraining(Measurement):
 
         # create camera image graphs
         self.wide_cam_view = pg.ViewBox()
+        # rval, frame = self.vc.read()
         self.wide_cam_layout.addItem(self.wide_cam_view)
         self.wide_cam_image = pg.ImageItem()
         self.wide_cam_view.addItem(self.wide_cam_image)

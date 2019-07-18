@@ -22,26 +22,14 @@ class AntCamApp(BaseMicroscopeApp):
         from AntCamHW.flircam.flircam_hw import FLIRCamHW
         wide_cam = FLIRCamHW(self)
         wide_cam.settings.camera_sn.update_value('14273815')
-        wide_cam.name = 'wide_cam'
+        wide_cam.name = 'USB2.0 Video Capture'
         self.add_hardware(wide_cam)
-        
-        from AntCamHW.flircam.flirrec_hw import FLIRRecHW
-        self.add_hardware(FLIRRecHW(self))
+        #
+        # from AntCamHW.flircam.flirrec_hw import FLIRRecHW
+        # self.add_hardware(FLIRRecHW(self))
         
         #self.add_hardware(DAQTimerHW(self))
 
-        #Add measurement components
-        
-        #from AntCamMS.nune_training_2P_5odor import NuneTraining
-        #self.add_measurement(NuneTraining(self))
-        
-        
-        #from AntCamMS.nune_training_2P_noodors import NuneTraining
-        #self.add_measurement(NuneTraining(self))
-        
-        #from AntCamMS.spencer_pretraining import NuneTraining
-        #self.add_measurement(NuneTraining(self))
-        
         from AntCamMS.Selina_Contingency import SelinaTraining
         self.add_measurement(SelinaTraining(self))
         
@@ -60,8 +48,8 @@ if __name__ == '__main__':
     
     app = AntCamApp(sys.argv)
     
-    app.hardware['wide_cam'].connected.update_value(True)
-    app.hardware['flirrec'].connected.update_value(True)
+    app.hardware['USB2.0 Video Capture'].connected.update_value(True)
+    # app.hardware['flirrec'].connected.update_value(True)
     #app.hardware['daq_timer'].connected.update_value(True)
     
     sys.exit(app.exec_())

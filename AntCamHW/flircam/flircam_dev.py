@@ -5,7 +5,7 @@ Created on Mar 26, 2018
 '''
 
 import numpy as np
-import PySpin
+import pyspin as PySpin
 '''
 FLIRCamDev is the FoundryScope Driver for Point-Grey cameras. It is calling the 
 FLIR Spinnaker Python binding PySpin. The newest version of PySpin can be
