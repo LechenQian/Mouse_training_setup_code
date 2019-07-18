@@ -134,8 +134,6 @@ class SelinaTraining(Measurement):
 
             self.check_licking_1spout(self.duration_rec_off)
 
-
-
         odors_cue.initiate()
         odors_cue.close()
         self.waterR.low()
