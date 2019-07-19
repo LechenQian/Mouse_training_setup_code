@@ -249,7 +249,7 @@ class SelinaTraining(Measurement):
         self.duration_odor_on = 0.5
 
         self.lines = [0, 1, 2, 3]
-        self.counter = np.zeros(len(self.lines))
+        self.counter = np.zeros(4)
 
         self.numtrials = 200
         self.p_cont_noncont = 0.5
@@ -265,7 +265,7 @@ class SelinaTraining(Measurement):
         # odors_cue.odors_DAQ[i]
         print('odor ready')
 
-        self.waterR = DAQSimpleDOTask('Dev1/port0/line0')
+        self.waterR = DAQSimpleDOTask('Dev1/port0/line2')
         self.waterR.low()
         # self.OdorOnCopy = DAQSimpleDOTask('Dev3/port2/line5')
         # self.OdorOnCopy.low()

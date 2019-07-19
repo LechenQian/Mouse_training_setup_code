@@ -6,20 +6,22 @@ import time
 import cv2
 
 # this test roughly consumes 5 ml water
-water = DAQSimpleDOTask('Dev1/port0/line0')
+# water = DAQSimpleDOTask('Dev1/port0/line0')
+water = DAQSimpleDOTask('Dev2_SELECT/port0/line0')
 
 timeout = time.time() + 50
 
-while time.time() < timeout:
+# while time.time() < timeout:
+#     water.high()
+#     time.sleep(0.1)
+#     water.low()
+#     time.sleep(5)
+
+for i in range(40):
     water.high()
-    time.sleep(5)
+    time.sleep(0.2)
     water.low()
     time.sleep(1)
-
-    # key = cv2.waitKey(2000)
-    # if key == 27:  # exit on ESC
-    #     break
-
 
 water.close()
 

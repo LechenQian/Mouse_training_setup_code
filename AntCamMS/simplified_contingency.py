@@ -50,27 +50,34 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         self.events_filename = '2019-7-17-test.xlsx'
-        self.reward_odor_index = 0
+        self.list = [4, 5, 6, 7]
+        self.waterline = 0
+        self.reward_odor_index = 7
 
-        self.duration_rec_off = 6.5
-        self.duration_rec_on_before = 4  # change this to exponential decay
-        self.duration_odor_to_outcome = 1.3
-        self.duration_water_large = 0.2
+        self.numtrials = 200
+        self.p_cont_noncont = 0.5
+        self.p_USwCS = 0.5
+        self.p_USwoCS = 0.5
+        self.counter = np.zeros(4)
 
-        self.duration_rec_on_after = 8
+        self.duration_rec_on_before = 2
         self.duration_odor_on = 0.5
+        self.duration_odor_to_outcome = 1.5
+        self.duration_water_large = 0.02
+        self.duration_rec_on_after = 4
+        self.duration_ITI = np.random.poisson(lam=2, size=self.numtrials)
 
     def run(self):
         print('a ha')
 
-        odors_cue = OdorGen([0, 1, 2, 3])
+        odors_cue = OdorGen(self.list)
         odors_cue.assign_odor()
         self.reward_odor = odors_cue.set_rewardodor(index=self.reward_odor_index)
         odors_cue.initiate()
         # odors_cue.odors_DAQ[i]
         print('odor done')
 
-        self.waterR = DAQSimpleDOTask('Dev1/port0/line0')
+        self.waterR = DAQSimpleDOTask('Dev2_SELECT/port0/line{}'.format(self.waterline))
         self.waterR.low()
         # self.OdorOnCopy = DAQSimpleDOTask('Dev3/port2/line5')
         # self.OdorOnCopy.low()
@@ -93,28 +100,24 @@ class SelinaTraining(Measurement):
 
 
         #generate trial type
-        numtrials = 200
-        p_cont_noncont = 0.5
-        p_USwCS = 0.5
-        p_USwoCS = 0.5
-        cont_reward = np.zeros(int(numtrials * p_cont_noncont * p_USwCS))  # code 0
-        cont_noreward = np.ones(int(numtrials * p_cont_noncont * (1 - p_USwCS)))  # code 1
+
+        # generate trial type
+
+        cont_reward = np.zeros(int(self.numtrials * self.p_cont_noncont * self.p_USwCS))  # code 0
+        cont_noreward = np.ones(int(self.numtrials * self.p_cont_noncont * (1 - self.p_USwCS)))  # code 1
         temp_comb1 = np.concatenate((cont_reward, cont_noreward))
 
-        noncont_reward = np.ones(int(numtrials * (1 - p_cont_noncont) * p_USwoCS)) * 2  # code 2
-        noncont_noreward = np.ones(int(numtrials * (1 - p_cont_noncont) * (1 - p_USwoCS))) * 3  # code 3
+        noncont_reward = np.ones(int(self.numtrials * (1 - self.p_cont_noncont) * self.p_USwoCS)) * 2  # code 2
+        noncont_noreward = np.ones(int(self.numtrials * (1 - self.p_cont_noncont) * (1 - self.p_USwoCS))) * 3  # code 3
         temp_comb2 = np.concatenate((noncont_noreward, noncont_reward))
 
         trialtypes = np.concatenate((temp_comb1, temp_comb2))
         random.shuffle(trialtypes)
+        print('================== Trial Types =================')
         print(trialtypes)
 
-        # counters for each trial type
-        self.counter = np.zeros(4)
-
-
-
-        for t in range(0, numtrials):
+        for t in range(0, self.numtrials):
+            print('================================================')
 
             print('trial number: ', t)
             print()
@@ -132,7 +135,7 @@ class SelinaTraining(Measurement):
 
             self.wb.save(self.events_filename)
 
-            self.check_licking_1spout(self.duration_rec_off)
+            self.check_licking_1spout(self.duration_ITI[t])
 
         odors_cue.initiate()
         odors_cue.close()
@@ -142,15 +145,11 @@ class SelinaTraining(Measurement):
         print('FINISHED ASSOCIATION TRAINING')
 
 
-        if self.settings.save_video.value():
-            self.recorder.close()
-
-
 
 
     def check_licking_1spout(self, interval):
 
-        checkperiod = 0.02
+        checkperiod = 0.01
         timeout = time.time() + interval
 
         right_lick_last = 0
@@ -216,9 +215,6 @@ class SelinaTraining(Measurement):
 
         self.wb.save(self.events_filename)
 
-
-
-
     def run_odor_module(self,odor_on, r_code):
         if odor_on:
             self.reward_odor.high()
@@ -240,7 +236,7 @@ class SelinaTraining(Measurement):
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])
 
-    def run_reward_module(self,reward_on, w_code):
+    def run_reward_module(self ,reward_on, w_code):
         if reward_on:
 
             # modify! give water if licks three times within 1 s

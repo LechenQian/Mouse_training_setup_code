@@ -1,4 +1,4 @@
-import cv2, os
+import cv2
 # os.system("v4l2-ctl -i 5 -s 5")
 
 
