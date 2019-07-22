@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f2a68146-ff45-4091-800b-ff455ee02d53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AntCamMS/2019-7-17-test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/2019-7-17-test.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cam.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_water.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_water.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -38,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_Contingency.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="255" column="26" lean-forward="true" selection-start-line="255" selection-start-column="26" selection-end-line="255" selection-end-column="26" />
+            <state relative-caret-position="4012">
+              <caret line="255" column="26" selection-start-line="255" selection-start-column="26" selection-end-line="255" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -47,8 +43,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AntCamMS/simplified_contingency.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="67" column="73" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="67" selection-end-column="73" />
+            <state relative-caret-position="369">
+              <caret line="289" column="10" lean-forward="true" selection-start-line="289" selection-start-column="10" selection-end-line="289" selection-end-column="10" />
+              <folding>
+                <element signature="e#55#91#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_water.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="357">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -81,6 +80,8 @@
       <find>OdorOnCopy</find>
       <find>read</find>
       <find>off</find>
+      <find>wb.save</find>
+      <find>save</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,14 +101,14 @@
         <option value="$PROJECT_DIR$/AntCamHW/flircam/camera_hw.py" />
         <option value="$PROJECT_DIR$/cam.py" />
         <option value="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" />
-        <option value="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" />
         <option value="$PROJECT_DIR$/test_water.py" />
+        <option value="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
-    <option name="y" value="29" />
+    <option name="x" value="76" />
+    <option name="y" value="42" />
     <option name="width" value="1839" />
     <option name="height" value="1000" />
   </component>
@@ -119,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,6 +147,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_water">
+  <component name="RunManager" selected="Python.simplified_contingency">
     <configuration name="Selina_Contingency" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="AntCam-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -308,8 +309,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_water" />
         <item itemvalue="Python.simplified_contingency" />
+        <item itemvalue="Python.test_water" />
         <item itemvalue="Python.cam" />
         <item itemvalue="Python.main_interface" />
         <item itemvalue="Python.nune_training_2P_odor_sound" />
@@ -404,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563476524151</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="updated">
+      <created>1563562891235</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1563562891235</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -417,7 +425,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="29" width="1839" height="1000" extended-state="0" />
+    <frame x="76" y="42" width="1839" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29094946" />
@@ -606,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AntCamMS/nune_training_2P_odor_sound.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -625,22 +626,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_Contingency.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="255" column="26" lean-forward="true" selection-start-line="255" selection-start-column="26" selection-end-line="255" selection-end-column="26" />
+        <state relative-caret-position="4012">
+          <caret line="255" column="26" selection-start-line="255" selection-start-column="26" selection-end-line="255" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_water.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="357">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
@@ -649,8 +657,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AntCamMS/simplified_contingency.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="67" column="73" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="67" selection-end-column="73" />
+        <state relative-caret-position="369">
+          <caret line="289" column="10" lean-forward="true" selection-start-line="289" selection-start-column="10" selection-end-line="289" selection-end-column="10" />
+          <folding>
+            <element signature="e#55#91#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,17 +4,15 @@ Created on July 17, 2019
 @author: Selina Qian
 '''
 from ScopeFoundry import Measurement
-
+import datetime
 import numpy as np
 import random
-
-
+import pickle
 import time
-
 from AntCamHW.daq_do.daq_do_dev import DAQSimpleDOTask
 from AntCamHW.daq_di.daq_di_dev import DAQSimpleDITask
-
 from openpyxl import Workbook
+
 
 class OdorGen(object):
     def __init__(self,odorindex):
@@ -23,24 +21,21 @@ class OdorGen(object):
 
 
     def assign_odor(self):
-    # initiate all the odor solenoids
-
+        # initiate all the odor solenoids
         for item in self.odorindex:
-
             self.odors_DAQ.append(DAQSimpleDOTask('Dev2_SELECT/port0/line{}'.format(item)))
         print('Odor {} has been properly assigned'.format(self.odorindex))
-
 
     def set_rewardodor(self,index):
         reward_odor = self.odors_DAQ[index]
         print('reward odor is odor {}'.format(index))
         return reward_odor
 
-
     def initiate(self):
         for odor in self.odors_DAQ:
             odor.low()
         print('Odor initiation: status low')
+
     def close(self):
         for odor in self.odors_DAQ:
             odor.close()
@@ -49,12 +44,15 @@ class OdorGen(object):
 
 class SelinaTraining(Measurement):
     def __init__(self):
-        self.events_filename = '2019-7-17-test.xlsx'
-        self.list = [4, 5, 6, 7]
-        self.waterline = 0
-        self.reward_odor_index = 7
+        self.events_path = r'C:\Users\MurthyLab\Desktop\Selina'
+        self.events_filename = 'C12' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M")+'.pkl'
+        self.filename = self.events_path + self.events_filename
 
-        self.numtrials = 200
+        self.waterline = 0
+        self.list = [7, 6, 5, 4]
+        self.reward_odor_index = 0 #odor list index
+
+        self.numtrials = 20
         self.p_cont_noncont = 0.5
         self.p_USwCS = 0.5
         self.p_USwoCS = 0.5
@@ -133,7 +131,7 @@ class SelinaTraining(Measurement):
 
             # self.settings.save_video.update_value(False):
 
-            self.wb.save(self.events_filename)
+            self.wb.save(self.events_path+'.xlsm')
 
             self.check_licking_1spout(self.duration_ITI[t])
 
@@ -162,10 +160,12 @@ class SelinaTraining(Measurement):
                     print('Lick')
                     d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
                     d = self.ws.cell(row=self.ws.max_row, column=2, value=11)
+                    # self.save_training()
                 else:
 
                     d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
                     d = self.ws.cell(row=self.ws.max_row, column=2, value=10)
+                    # self.save_training()
             else:
                 pass
 
@@ -213,7 +213,7 @@ class SelinaTraining(Measurement):
 
         self.counter[types] += 1
 
-        self.wb.save(self.events_filename)
+        self.wb.save(self.events_path+'.xlsm')
 
     def run_odor_module(self,odor_on, r_code):
         if odor_on:
@@ -221,6 +221,7 @@ class SelinaTraining(Measurement):
             # self.OdorOnCopy.high()  # ？？？
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
+            # self.save_training()
 
             time.sleep(self.duration_odor_on)
 
@@ -229,12 +230,15 @@ class SelinaTraining(Measurement):
 
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])
+            # self.save_training()
         else:
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
+            # self.save_training()
             time.sleep(self.duration_odor_on)
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])
+            # self.save_training()
 
     def run_reward_module(self ,reward_on, w_code):
         if reward_on:
@@ -245,19 +249,23 @@ class SelinaTraining(Measurement):
             self.waterR.high()
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[0])
+            # self.save_training()
             self.check_licking_1spout(self.duration_water_large)  # this parameter hasn't een defined
 
             print('closing water valve')
             self.waterR.low()
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[1])
+            # self.save_training()
 
         else:
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[0])
+            # self.save_training()
             time.sleep(self.duration_water_large)
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[1])
+            # self.save_training()
 
 #     def camera_action(self):
 #         '''
@@ -274,7 +282,9 @@ class SelinaTraining(Measurement):
 #         except Exception as ex:
 #             print('Error : %s' % ex)
 
-
+    def save_training(self):
+        with open(self.filename, 'wb') as output:
+            pickle.dump(self, output, pickle.HIGHEST_PROTOCOL)
 test = SelinaTraining()
 print('start')
 test.run()
