@@ -9,19 +9,27 @@ import cv2
 # water = DAQSimpleDOTask('Dev1/port0/line0')
 water = DAQSimpleDOTask('Dev2_SELECT/port0/line0')
 
-# timeout = time.time() + 50
+timeout = time.time() + 1200
+count_drop = 0
+lickR = DAQSimpleDITask('Dev2_SELECT/port1/line0')
+water.high()
+time.sleep(0.1)
+water.low()
+while time.time() < timeout and count < 40:
 
-# while time.time() < timeout:
-#     water.high()
-#     time.sleep(0.1)
-#     water.low()
-#     time.sleep(5)
+    lick = lickR.read()
+    if lick:
+        time.sleep(10)
+        water.high()
+        time.sleep(0.1)
+        water.low()
+        count += 1
+    else:
+        continue
 
-for i in range(40):
-    water.high()
-    time.sleep(0.2)
-    water.low()
-    time.sleep(1)
+    time.sleep(0.01)
+
+
 
 water.close()
 
