@@ -12,7 +12,7 @@ import time
 from AntCamHW.daq_do.daq_do_dev import DAQSimpleDOTask
 from AntCamHW.daq_di.daq_di_dev import DAQSimpleDITask
 from openpyxl import Workbook
-
+import os
 
 class OdorGen(object):
     def __init__(self,odorindex):
@@ -45,15 +45,12 @@ class OdorGen(object):
 
 class SelinaTraining(Measurement):
     def __init__(self):
-        self.events_path = r'C:\Users\MurthyLab\Desktop\Selina'
-        self.events_filename = 'C12' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M")+'.pkl'
-        self.filename = self.events_path + self.events_filename
-
-        self.waterline = 0
         self.list = [7, 6]
-        self.reward_odor_index = [0, 1] #odor list index
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C12/"
+        self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'.xlsx'
+        self.reward_odor_index = [0, 1] #odor list index change according to mice
 
-        self.numtrials = 200
+        self.numtrials = 4
         # pre training
         self.p_reward_nonreward = 0.5
         self.p_USwCS = 0.5
@@ -61,11 +58,14 @@ class SelinaTraining(Measurement):
         self.counter = np.zeros(3)
 
         self.duration_rec_on_before = 2
-        self.duration_odor_on = 0.7
-        self.duration_odor_to_outcome = 1.5
-        self.duration_water_large = 0.02
-        self.duration_rec_on_after = 4
+        self.duration_odor_on = 1
+        self.duration_odor_to_outcome = 2
+        self.duration_water_large = 0.1
+        self.duration_rec_on_after = 3
         self.duration_ITI = np.random.poisson(lam=2, size=self.numtrials)
+
+        self.waterline = 0
+        self.filename = self.events_path + self.events_filename
 
     def run(self):
         print('a ha')
@@ -94,6 +94,10 @@ class SelinaTraining(Measurement):
         # non-contingency no reward odor on = 161, off = 160, water on = 81, right water off = 80
 
         # create excel workbook
+        try:
+            os.mkdir(self.events_path)
+        except FileExistsError:
+            pass
         self.wb = Workbook()
         self.ws = self.wb.active
         print('book done')
@@ -131,7 +135,7 @@ class SelinaTraining(Measurement):
 
             # self.settings.save_video.update_value(False):
 
-            self.wb.save(self.events_path+'.xlsm')
+            self.wb.save(self.filename)
 
             self.check_licking_1spout(self.duration_ITI[t])
 
@@ -145,12 +149,14 @@ class SelinaTraining(Measurement):
 
 
 
-    def check_licking_1spout(self, interval):
+    def check_licking_1spout(self, interval,check_action=False):
 
         checkperiod = 0.01
         timeout = time.time() + interval
-
+        reward_on = False
         right_lick_last = 0
+
+        count = 0
         while time.time() < timeout:
             right_lick = self.lickR.read()
 
@@ -160,40 +166,46 @@ class SelinaTraining(Measurement):
                     print('Lick')
                     d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
                     d = self.ws.cell(row=self.ws.max_row, column=2, value=11)
-                    # self.save_training()
+                # self.save_training()
+                    if check_action:
+                        count += 1
                 else:
 
-                    d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
+                    d = self.ws.cell(row=(self.ws.max_row+1), column=1, value=time.clock())
                     d = self.ws.cell(row=self.ws.max_row, column=2, value=10)
-                    # self.save_training()
             else:
                 pass
-
             right_lick_last = right_lick
             time.sleep(checkperiod)
+        if check_action and count > 3:
+            reward_on = True
+            print('licking activate reward')
+        elif check_action and count <= 3:
+            print('not enough licking')
+        return reward_on
 
     def run_trial_type(self,types):
         odor_on = False
         reward_on = False
         if types == 0:
             print('contingency odor reward trial ' + str(int(self.counter[types])))
-            print('opening odor port')
+
             odor_on = True # contingency odor comes
-            reward_on = True
+
             r_code = [131, 130]
             w_code = [51, 50]
             self.run_odor_module(odor_on, r_code)
-            self.check_licking_1spout(self.duration_odor_to_outcome)  ### can be a problem
+            reward_on = self.check_licking_1spout(self.duration_odor_to_outcome, True)  ### can be a problem
             self.run_reward_module(reward_on, w_code)
 
         elif types == 1:
             print('contingency odor no reward trial ' + str(int(self.counter[types])))
-            print('opening odor port')
+
             odor_on = True
             r_code = [141, 140]
             w_code = [61, 60]
             self.run_odor_module(odor_on, r_code)
-            self.check_licking_1spout(self.duration_odor_to_outcome)  ### can be a problem
+            reward_on = self.check_licking_1spout(self.duration_odor_to_outcome)  ### can be a problem
             self.run_reward_module(reward_on, w_code)
         elif types == 2:
             print('control odor no reward trial ' + str(int(self.counter[types])))
@@ -207,10 +219,11 @@ class SelinaTraining(Measurement):
 
         self.counter[types] += 1
 
-        self.wb.save(self.events_path+'.xlsm')
+        self.wb.save(self.filename)
 
     def run_odor_module(self,odor_on, r_code):
         if odor_on:
+            print('opening odor port')
             self.reward_odor.high()
             # self.OdorOnCopy.high()  # ？？？
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
@@ -226,6 +239,7 @@ class SelinaTraining(Measurement):
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])
             # self.save_training()
         else:
+            print('opening odor port')
             self.non_reward_odor.high()
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])

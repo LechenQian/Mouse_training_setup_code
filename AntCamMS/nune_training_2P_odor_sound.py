@@ -578,8 +578,8 @@ class NuneTraining(Measurement):
                     d = self.ws.cell(row=self.ws.max_row, column=2, value=10)
             else:
                 self.settings.lick_status.update_value(0)
-            
-            right_lick_last = right_lick    
+
+            right_lick_last = right_lick
             time.sleep(checkperiod)
 
 
