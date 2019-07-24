@@ -17,9 +17,9 @@ water = DAQSimpleDOTask('Dev2_SELECT/port0/line0')
 #     water.low()
 #     time.sleep(5)
 
-for i in range(40):
+for i in range(100):
     water.high()
-    time.sleep(0.2)
+    time.sleep(0.1)
     water.low()
     time.sleep(1)
 
