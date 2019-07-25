@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f2a68146-ff45-4091-800b-ff455ee02d53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AntCamMS/nune_training_2P_odor_sound.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/nune_training_2P_odor_sound.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hab_water.py" beforeDir="false" afterPath="$PROJECT_DIR$/hab_water.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,33 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cam.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_interface.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_Contingency.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="255" column="26" selection-start-line="255" selection-start-column="26" selection-end-line="255" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AntCamMS/simplified_contingency.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="48" column="72" lean-forward="true" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
+            <state relative-caret-position="77">
+              <caret line="45" column="34" lean-forward="true" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
               <folding>
                 <element signature="e#55#91#0" expanded="true" />
               </folding>
@@ -77,23 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AntCamMS/nune_training_2P_odor_sound.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="581" column="40" selection-start-line="581" selection-start-column="40" selection-end-line="581" selection-end-column="40" />
-              <folding>
-                <element signature="e#51#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hab_water.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="411">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -139,10 +99,10 @@
         <option value="$PROJECT_DIR$/cam.py" />
         <option value="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" />
         <option value="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" />
-        <option value="$PROJECT_DIR$/hab_water.py" />
         <option value="$PROJECT_DIR$/test_water.py" />
         <option value="$PROJECT_DIR$/AntCamMS/nune_training_2P_odor_sound.py" />
         <option value="$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py" />
+        <option value="$PROJECT_DIR$/hab_water.py" />
       </list>
     </option>
   </component>
@@ -212,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pretraining_two_odors">
+  <component name="RunManager" selected="Python.hab_water">
     <configuration name="Selina_Contingency" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="AntCam-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -349,9 +309,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hab_water" />
         <item itemvalue="Python.pretraining_two_odors" />
         <item itemvalue="Python.test_water" />
-        <item itemvalue="Python.hab_water" />
         <item itemvalue="Python.simplified_contingency" />
         <item itemvalue="Python.cam" />
       </list>
@@ -473,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564001283545</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="updated">
+      <created>1564007540497</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1564007540497</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -494,7 +461,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992658" visible="true" weight="0.40484428" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992658" visible="true" weight="0.29065743" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -689,16 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hab_water.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_water.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -728,7 +685,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AntCamMS/nune_training_2P_odor_sound.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="5285">
           <caret line="581" column="40" selection-start-line="581" selection-start-column="40" selection-end-line="581" selection-end-column="40" />
           <folding>
             <element signature="e#51#87#0" expanded="true" />
@@ -738,10 +695,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="48" column="72" lean-forward="true" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
+        <state relative-caret-position="77">
+          <caret line="45" column="34" lean-forward="true" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
           <folding>
             <element signature="e#55#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hab_water.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
