@@ -48,19 +48,20 @@ class SelinaTraining(Measurement):
         self.list = [7, 6]
         self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C12/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'.xlsx'
-        self.reward_odor_index = [0, 1] #odor list index change according to mice
+        self.reward_odor_index = [1, 0] #odor list index change according to mi
+        self.operant = False
 
-        self.numtrials = 4
+        self.numtrials = 20
         # pre training
-        self.p_reward_nonreward = 0.5
-        self.p_USwCS = 0.5
+        self.p_reward_nonreward = 1
+        self.p_USwCS = 1
         self.p_USwoCS = 0
         self.counter = np.zeros(3)
 
         self.duration_rec_on_before = 2
         self.duration_odor_on = 1
-        self.duration_odor_to_outcome = 2
-        self.duration_water_large = 0.1
+        self.duration_odor_to_outcome = 1
+        self.duration_water_large = 0.08
         self.duration_rec_on_after = 3
         self.duration_ITI = np.random.poisson(lam=2, size=self.numtrials)
 
@@ -153,7 +154,7 @@ class SelinaTraining(Measurement):
 
         checkperiod = 0.01
         timeout = time.time() + interval
-        reward_on = False
+        reward_on = True
         right_lick_last = 0
 
         count = 0
@@ -178,10 +179,11 @@ class SelinaTraining(Measurement):
             right_lick_last = right_lick
             time.sleep(checkperiod)
         if check_action and count > 3:
-            reward_on = True
+
             print('licking activate reward')
         elif check_action and count <= 3:
             print('not enough licking')
+            reward_on = False
         return reward_on
 
     def run_trial_type(self,types):
@@ -195,7 +197,7 @@ class SelinaTraining(Measurement):
             r_code = [131, 130]
             w_code = [51, 50]
             self.run_odor_module(odor_on, r_code)
-            reward_on = self.check_licking_1spout(self.duration_odor_to_outcome, True)  ### can be a problem
+            reward_on = self.check_licking_1spout(self.duration_odor_to_outcome, self.operant)  ### can be a problem
             self.run_reward_module(reward_on, w_code)
 
         elif types == 1:

@@ -12,6 +12,7 @@ import time
 from AntCamHW.daq_do.daq_do_dev import DAQSimpleDOTask
 from AntCamHW.daq_di.daq_di_dev import DAQSimpleDITask
 from openpyxl import Workbook
+from utils import save_dict_to_hdf5, load_dict_from_hdf5
 
 
 class OdorGen(object):
@@ -44,15 +45,15 @@ class OdorGen(object):
 
 class SelinaTraining(Measurement):
     def __init__(self):
-        self.events_path = r'C:\Users\MurthyLab\Desktop\Selina'
-        self.events_filename = 'C12' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M")+'.pkl'
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C12/"
+        self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M") +'.hdf5'
         self.filename = self.events_path + self.events_filename
 
         self.waterline = 0
         self.list = [7, 6, 5, 4]
         self.reward_odor_index = 0 #odor list index
 
-        self.numtrials = 20
+        self.numtrials = 4
         self.p_cont_noncont = 0.5
         self.p_USwCS = 0.5
         self.p_USwoCS = 0.5
@@ -283,9 +284,24 @@ class SelinaTraining(Measurement):
 #             print('Error : %s' % ex)
 
     def save_training(self):
-        with open(self.filename, 'wb') as output:
-            pickle.dump(self, output, pickle.HIGHEST_PROTOCOL)
+
+        '''save object in hdf5 file format
+        Args:
+            filename: str
+                path to the hdf5 file containing the saved object
+        '''
+
+        if '.hdf5' in self.filename:
+            save_dict_to_hdf5(self.__dict__, self.filename)
+        else:
+            raise Exception("Filename not supported")
+
+
+import dill
 test = SelinaTraining()
+test.save_training()
+
 print('start')
 test.run()
+
 
