@@ -51,7 +51,7 @@ class SelinaTraining(Measurement):
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = False
 
-        self.numtrials = 20
+        self.numtrials = 150
         # pre training
         self.p_reward_nonreward = 1
         self.p_USwCS = 1

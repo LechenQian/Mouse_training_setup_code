@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2a68146-ff45-4091-800b-ff455ee02d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PID.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="3247">
               <caret line="201" column="14" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
             </state>
           </provider>
@@ -70,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="513">
+              <caret line="65" column="73" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="65" selection-end-column="73" />
               <folding>
                 <element signature="e#55#91#0" expanded="true" />
               </folding>
@@ -480,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564086417400</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="updated">
+      <created>1564248296305</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1564248296305</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -734,6 +738,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3247">
+          <caret line="201" column="14" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_water.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -751,17 +762,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="201" column="14" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="513">
+          <caret line="65" column="73" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="65" selection-end-column="73" />
           <folding>
             <element signature="e#55#91#0" expanded="true" />
           </folding>
