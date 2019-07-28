@@ -50,8 +50,10 @@ class SelinaTraining(Measurement):
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = False
+        self.licknum = 1
 
-        self.numtrials = 150
+
+        self.numtrials = 10
         # pre training
         self.p_reward_nonreward = 1
         self.p_USwCS = 1
@@ -60,7 +62,8 @@ class SelinaTraining(Measurement):
 
         self.duration_rec_on_before = 2
         self.duration_odor_on = 1
-        self.duration_odor_to_outcome = 1
+        self.duration_odor_to_action = 0.5
+        self.duration_action_window = 2
         self.duration_water_large = 0.08
         self.duration_rec_on_after = 3
         self.duration_ITI = np.random.poisson(lam=2, size=self.numtrials)
@@ -178,10 +181,10 @@ class SelinaTraining(Measurement):
                 pass
             right_lick_last = right_lick
             time.sleep(checkperiod)
-        if check_action and count > 3:
+        if check_action and count >= self.licknum:
 
             print('licking activate reward')
-        elif check_action and count <= 3:
+        elif check_action and count < self.licknum:
             print('not enough licking')
             reward_on = False
         return reward_on
@@ -197,7 +200,8 @@ class SelinaTraining(Measurement):
             r_code = [131, 130]
             w_code = [51, 50]
             self.run_odor_module(odor_on, r_code)
-            reward_on = self.check_licking_1spout(self.duration_odor_to_outcome, self.operant)  ### can be a problem
+            reward_on = self.check_licking_1spout(self.duration_odor_to_action)
+            reward_on = self.check_licking_1spout(self.duration_action_window, self.operant)  ### can be a problem
             self.run_reward_module(reward_on, w_code)
 
         elif types == 1:
