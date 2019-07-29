@@ -49,11 +49,11 @@ class SelinaTraining(Measurement):
         self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C12/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
-        self.operant = False
+        self.operant = True
         self.licknum = 1
 
 
-        self.numtrials = 50
+        self.numtrials = 80
         # pre training
         self.p_reward_nonreward = 1
         self.p_USwCS = 1
