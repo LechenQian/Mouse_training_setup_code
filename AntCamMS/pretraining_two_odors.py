@@ -47,13 +47,13 @@ class SelinaTraining(Measurement):
     def __init__(self):
         self.list = [7, 6]
         self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C12/"
-        self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'.xlsx'
+        self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = False
         self.licknum = 1
 
 
-        self.numtrials = 10
+        self.numtrials = 50
         # pre training
         self.p_reward_nonreward = 1
         self.p_USwCS = 1
@@ -65,7 +65,7 @@ class SelinaTraining(Measurement):
         self.duration_odor_to_action = 0.5
         self.duration_action_window = 2
         self.duration_water_large = 0.08
-        self.duration_rec_on_after = 3
+        self.duration_rec_on_after = 4
         self.duration_ITI = np.random.poisson(lam=2, size=self.numtrials)
 
         self.waterline = 0
