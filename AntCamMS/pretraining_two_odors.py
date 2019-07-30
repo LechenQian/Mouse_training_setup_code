@@ -13,6 +13,7 @@ from AntCamHW.daq_do.daq_do_dev import DAQSimpleDOTask
 from AntCamHW.daq_di.daq_di_dev import DAQSimpleDITask
 from openpyxl import Workbook
 import os
+import logging
 
 class OdorGen(object):
     def __init__(self,odorindex):
@@ -46,14 +47,14 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         self.list = [7, 6]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C16/"
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C17/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = True
         self.licknum = 1
 
 
-        self.numtrials = 80
+        self.numtrials = 1
         # pre training
         self.p_reward_nonreward = 1
         self.p_USwCS = 1
@@ -74,6 +75,17 @@ class SelinaTraining(Measurement):
     def run(self):
         print('a ha')
 
+
+
+        try:
+            os.mkdir(self.events_path)
+        except OSError:
+            print("The directory %s existed" % self.events_path)
+        else:
+            print("Successfully created the directory %s " % self.events_path)
+        logname = self.filename[0:-5] + '.log'
+        logging.basicConfig(filename=logname, level=logging.DEBUG)
+        logging.info(self.__dict__)
         odors_cue = OdorGen(self.list)
         odors_cue.assign_odor()
         self.reward_odor, self.non_reward_odor = odors_cue.set_rewardodor(index=self.reward_odor_index)
@@ -98,10 +110,7 @@ class SelinaTraining(Measurement):
         # non-contingency no reward odor on = 161, off = 160, water on = 81, right water off = 80
 
         # create excel workbook
-        try:
-            os.mkdir(self.events_path)
-        except FileExistsError:
-            pass
+
         self.wb = Workbook()
         self.ws = self.wb.active
         print('book done')
@@ -236,7 +245,7 @@ class SelinaTraining(Measurement):
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
             # self.save_training()
 
-            check_licking_1spout(self, self.duration_odor_on)
+            self.check_licking_1spout(self.duration_odor_on)
 
             print('closing odor port')
             self.reward_odor.low()
@@ -250,7 +259,7 @@ class SelinaTraining(Measurement):
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
             # self.save_training()
-            check_licking_1spout(self, self.duration_odor_on)
+            self.check_licking_1spout(self.duration_odor_on)
             print('closing odor port')
             self.reward_odor.low()
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
@@ -281,7 +290,7 @@ class SelinaTraining(Measurement):
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[0])
             # self.save_training()
-            time.sleep(self.duration_water_large)
+            self.check_licking_1spout(self.duration_water_large)
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[1])
             # self.save_training()
@@ -304,7 +313,12 @@ class SelinaTraining(Measurement):
     def save_training(self):
         with open(self.filename, 'wb') as output:
             pickle.dump(self, output, pickle.HIGHEST_PROTOCOL)
+
+
+
+
 test = SelinaTraining()
 print('start')
 test.run()
+
 
