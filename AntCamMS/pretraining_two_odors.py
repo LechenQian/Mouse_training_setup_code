@@ -46,7 +46,7 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         self.list = [7, 6]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C12/"
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C16/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = True
@@ -62,9 +62,9 @@ class SelinaTraining(Measurement):
 
         self.duration_rec_on_before = 2
         self.duration_odor_on = 1
-        self.duration_odor_to_action = 0.5
-        self.duration_action_window = 2
-        self.duration_water_large = 0.08
+        self.duration_odor_to_action = 0
+        self.duration_action_window = 2.5
+        self.duration_water_large = 0.1
         self.duration_rec_on_after = 4
         self.duration_ITI = np.random.poisson(lam=2, size=self.numtrials)
 
@@ -236,7 +236,7 @@ class SelinaTraining(Measurement):
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
             # self.save_training()
 
-            time.sleep(self.duration_odor_on)
+            check_licking_1spout(self, self.duration_odor_on)
 
             print('closing odor port')
             self.reward_odor.low()
@@ -250,7 +250,7 @@ class SelinaTraining(Measurement):
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
             # self.save_training()
-            time.sleep(self.duration_odor_on)
+            check_licking_1spout(self, self.duration_odor_on)
             print('closing odor port')
             self.reward_odor.low()
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
