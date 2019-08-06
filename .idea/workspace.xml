@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2a68146-ff45-4091-800b-ff455ee02d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_createfolder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AntCamMS/go_no-go_task.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hab_water.py" beforeDir="false" afterPath="$PROJECT_DIR$/hab_water.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,11 +66,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="41" column="35" lean-forward="true" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+            <state relative-caret-position="310">
+              <caret line="141" column="42" lean-forward="true" selection-end-line="326" />
+              <folding>
+                <element signature="e#55#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AntCamMS/go_no-go_task.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="243" column="35" lean-forward="true" selection-start-line="243" selection-start-column="35" selection-end-line="243" selection-end-column="35" />
               <folding>
                 <element signature="e#55#91#0" expanded="true" />
               </folding>
@@ -78,19 +91,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_createfolder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="10" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hab_water.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="408">
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -118,6 +122,7 @@
       <find>wb.save</find>
       <find>xlsx</find>
       <find>ope</find>
+      <find>reward</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,20 +143,21 @@
         <option value="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" />
         <option value="$PROJECT_DIR$/test_water.py" />
         <option value="$PROJECT_DIR$/AntCamMS/nune_training_2P_odor_sound.py" />
-        <option value="$PROJECT_DIR$/hab_water.py" />
         <option value="$PROJECT_DIR$/PID.py" />
         <option value="$PROJECT_DIR$/uils.py" />
         <option value="$PROJECT_DIR$/AntCamMS/simplified_contingency.py" />
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/test_createfolder.py" />
+        <option value="$PROJECT_DIR$/hab_water.py" />
         <option value="$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py" />
+        <option value="$PROJECT_DIR$/AntCamMS/go_no-go_task.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="133" />
-    <option name="y" value="74" />
-    <option name="width" value="1410" />
+    <option name="x" value="57" />
+    <option name="y" value="65" />
+    <option name="width" value="1265" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -257,7 +263,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cam" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hab_water" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AntCam-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -269,7 +275,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cam.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hab_water.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -343,19 +349,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Selina_Contingency" />
-      <item itemvalue="Python.cam" />
       <item itemvalue="Python.pretraining_two_odors" />
       <item itemvalue="Python.PID" />
       <item itemvalue="Python.simplified_contingency" />
       <item itemvalue="Python.test_createfolder" />
+      <item itemvalue="Python.hab_water" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.pretraining_two_odors" />
+        <item itemvalue="Python.hab_water" />
         <item itemvalue="Python.test_createfolder" />
         <item itemvalue="Python.simplified_contingency" />
         <item itemvalue="Python.PID" />
-        <item itemvalue="Python.cam" />
       </list>
     </recent_temporary>
   </component>
@@ -531,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564513286672</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="updated">
+      <created>1564515873226</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1564515873226</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -544,10 +557,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="133" y="74" width="1410" height="1000" extended-state="0" />
+    <frame x="57" y="65" width="1265" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20772594" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23227383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -799,16 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hab_water.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_createfolder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -816,10 +819,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hab_water.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AntCamMS/pretraining_two_odors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="41" column="35" lean-forward="true" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="310">
+          <caret line="141" column="42" lean-forward="true" selection-end-line="326" />
+          <folding>
+            <element signature="e#55#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AntCamMS/go_no-go_task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="243" column="35" lean-forward="true" selection-start-line="243" selection-start-column="35" selection-end-line="243" selection-end-column="35" />
           <folding>
             <element signature="e#55#91#0" expanded="true" />
           </folding>
