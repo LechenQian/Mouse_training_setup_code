@@ -47,14 +47,14 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         self.list = [7, 6]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C17/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C15/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
-        self.operant = True
+        self.operant = False
         self.licknum = 1
 
 
-        self.numtrials = 1
+        self.numtrials = 120
         # pre training
         self.p_reward_nonreward = 1
         self.p_USwCS = 1
@@ -216,20 +216,22 @@ class SelinaTraining(Measurement):
         elif types == 1:
             print('contingency odor no reward trial ' + str(int(self.counter[types])))
 
-            odor_on = True
+            odor_on = False
             r_code = [141, 140]
             w_code = [61, 60]
             self.run_odor_module(odor_on, r_code)
-            reward_on = self.check_licking_1spout(self.duration_odor_to_outcome)  ### can be a problem
+            self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)  ### can be a problem
             self.run_reward_module(reward_on, w_code)
         elif types == 2:
-            print('control odor no reward trial ' + str(int(self.counter[types])))
+            print(' no reward trial ' + str(int(self.counter[types])))
             # odor false: control odor comes
 
             r_code = [151, 150]
             w_code = [71, 70]
-            self.run_odor_module(odor_on, r_code)
-            self.check_licking_1spout(self.duration_odor_to_outcome)  ### can be a problem
+           # self.run_odor_module(odor_on, r_code)
+            self.check_licking_1spout(self.duration_odor_on)
+            self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)  ### can be a problem
+            reward_on = False
             self.run_reward_module(reward_on, w_code)
 
         self.counter[types] += 1
@@ -254,17 +256,17 @@ class SelinaTraining(Measurement):
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])
             # self.save_training()
         else:
-            print('opening odor port')
-            self.non_reward_odor.high()
-            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
+            # print('opening odor port')
+            # self.non_reward_odor.high()
+            # d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
+            # d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
             # self.save_training()
             self.check_licking_1spout(self.duration_odor_on)
-            print('closing odor port')
-            self.reward_odor.low()
-            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])
-            # self.save_training()
+            # print('closing odor port')
+            # self.reward_odor.low()
+            # d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
+            # d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])
+            # # self.save_training()
 
 
 
@@ -287,12 +289,12 @@ class SelinaTraining(Measurement):
             # self.save_training()
 
         else:
-            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[0])
+            # d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
+            # d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[0])
             # self.save_training()
             self.check_licking_1spout(self.duration_water_large)
-            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[1])
+            # d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
+            # d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[1])
             # self.save_training()
 
 #     def camera_action(self):

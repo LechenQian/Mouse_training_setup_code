@@ -47,18 +47,18 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         self.list = [7, 6]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C15/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C16/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = True
-        self.licknum = 1
+        self.licknum = 0
 
 
-        self.numtrials = 120
+        self.numtrials = 150
         # pre training
-        self.p_go = 0.5
-        self.p_no_go = 0.3
-        self.p_empty = 0.2
+        self.p_go = 1
+        self.p_no_go = 0
+        self.p_empty = 0
 
         self.counter = np.zeros(3)
 
@@ -68,7 +68,7 @@ class SelinaTraining(Measurement):
         self.duration_action_window = 2.5
         self.duration_water_large = 0.1
         self.duration_rec_on_after = 4
-        self.duration_ITI = np.random.poisson(lam=2, size=self.numtrials)
+        self.duration_ITI = np.random.exponential(2, size=self.numtrials)
 
         self.waterline = 0
         self.filename = self.events_path + self.events_filename
@@ -118,7 +118,7 @@ class SelinaTraining(Measurement):
         # generate trial type
 
         train_go = np.zeros(int(self.numtrials * self.p_go))  # code 0
-        train_nogo = np.ones(int(self.numtrials * self.p_no_))  # code 1
+        train_nogo = np.ones(int(self.numtrials * self.p_no_go))  # code 1
         temp_comb1 = np.concatenate((train_go,train_nogo))
 
         train_empty = np.ones(int(self.numtrials * self.p_empty)) * 2  # code 2
