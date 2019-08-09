@@ -47,14 +47,14 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         self.list = [7, 6]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C15/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C16/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = True
-        self.licknum = 0
+        self.licknum = 1
 
 
-        self.numtrials = 150
+        self.numtrials = 100 #need to be 20*
         # pre training
         self.p_go = 0.8
         self.p_no_go = 0.1
@@ -116,16 +116,19 @@ class SelinaTraining(Measurement):
         #generate trial type
 
         # generate trial type
+        trialtypes = np.zeros(self.numtrials)
+        for i in range(int(self.numtrials/20)):
+            train_go = np.zeros(int(20 * self.p_go))  # code 0
+            train_nogo = np.ones(int(20 * self.p_no_go))  # code 1
+            temp_comb1 = np.concatenate((train_go,train_nogo))
 
-        train_go = np.zeros(int(self.numtrials * self.p_go))  # code 0
-        train_nogo = np.ones(int(self.numtrials * self.p_no_go))  # code 1
-        temp_comb1 = np.concatenate((train_go,train_nogo))
+            train_empty = np.ones(int(20 * self.p_empty)) * 2  # code 2
 
-        train_empty = np.ones(int(self.numtrials * self.p_empty)) * 2  # code 2
+            temp_comb2 = np.concatenate((temp_comb1, train_empty))
+            random.shuffle(temp_comb2)
+            trialtypes[20*i:20*(i+1)] = temp_comb2
 
-        trialtypes = np.concatenate((temp_comb1, train_empty))
-        random.shuffle(trialtypes)
-        random.shuffle(trialtypes)
+
         self.trialstype = trialtypes
         print('================== Trial Types =================')
         print(trialtypes)
