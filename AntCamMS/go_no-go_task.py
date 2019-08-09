@@ -47,11 +47,11 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         self.list = [7, 6]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C14/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C15/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = True
-        self.licknum = 1
+        self.licknum = 0
 
 
         self.numtrials = 150
