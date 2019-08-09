@@ -1,4 +1,6 @@
+# author: Doggy Huang
 import random
+
 
 total_num = 100
 percent_1 = 0.2
