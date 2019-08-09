@@ -47,18 +47,18 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         self.list = [7, 6]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C16/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C14/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = True
-        self.licknum = 0
+        self.licknum = 1
 
 
         self.numtrials = 150
         # pre training
-        self.p_go = 1
-        self.p_no_go = 0
-        self.p_empty = 0
+        self.p_go = 0.8
+        self.p_no_go = 0.1
+        self.p_empty = 0.1
 
         self.counter = np.zeros(3)
 
@@ -146,9 +146,6 @@ class SelinaTraining(Measurement):
             self.check_licking_1spout(self.duration_rec_on_after)
 
             # self.settings.save_video.update_value(False):
-
-
-
             self.check_licking_1spout(self.duration_ITI[t])
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=100)

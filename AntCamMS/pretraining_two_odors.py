@@ -50,16 +50,16 @@ class SelinaTraining(Measurement):
         self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C15/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
-        self.operant = False
+        self.operant = True
         self.licknum = 1
 
 
-        self.numtrials = 120
+        self.numtrials = 200
         # pre training
         self.p_reward_nonreward = 1
         self.p_USwCS = 1
         self.p_USwoCS = 0
-        self.counter = np.zeros(3)
+        self.counter = np.zeros(4)
 
         self.duration_rec_on_before = 2
         self.duration_odor_on = 1
@@ -67,16 +67,12 @@ class SelinaTraining(Measurement):
         self.duration_action_window = 2.5
         self.duration_water_large = 0.1
         self.duration_rec_on_after = 4
-        self.duration_ITI = np.random.poisson(lam=2, size=self.numtrials)
+        self.duration_ITI = np.random.exponential(lam=2, size=self.numtrials)
 
         self.waterline = 0
         self.filename = self.events_path + self.events_filename
 
     def run(self):
-        print('a ha')
-
-
-
         try:
             os.mkdir(self.events_path)
         except OSError:
@@ -102,6 +98,7 @@ class SelinaTraining(Measurement):
 
         # EVENT CODES
         # video recording start / start trial = 101
+        # end trial = 100
         # lick on = 11, lick off = 10
 
         # contingency reward odor on = 131, off = 130, water on = 51, right water off = 50
@@ -113,7 +110,6 @@ class SelinaTraining(Measurement):
 
         self.wb = Workbook()
         self.ws = self.wb.active
-        print('book done')
 
 
         #generate trial type
@@ -128,6 +124,7 @@ class SelinaTraining(Measurement):
 
         trialtypes = np.concatenate((temp_comb1, control_odor))
         random.shuffle(trialtypes)
+        self.trialtype = trialtypes
         print('================== Trial Types =================')
         print(trialtypes)
 
@@ -147,10 +144,10 @@ class SelinaTraining(Measurement):
             self.check_licking_1spout(self.duration_rec_on_after)
 
             # self.settings.save_video.update_value(False):
-
-            self.wb.save(self.filename)
-
             self.check_licking_1spout(self.duration_ITI[t])
+            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
+            d = self.ws.cell(row=self.ws.max_row, column=2, value=100)
+            self.wb.save(self.filename)
 
         odors_cue.initiate()
         odors_cue.close()
@@ -209,14 +206,14 @@ class SelinaTraining(Measurement):
             r_code = [131, 130]
             w_code = [51, 50]
             self.run_odor_module(odor_on, r_code)
-            reward_on = self.check_licking_1spout(self.duration_odor_to_action)
-            reward_on = self.check_licking_1spout(self.duration_action_window, self.operant)  ### can be a problem
+            self.check_licking_1spout(self.duration_odor_to_action)
+            self.check_licking_1spout(self.duration_action_window, self.operant)  ### can be a problem
             self.run_reward_module(reward_on, w_code)
 
         elif types == 1:
             print('contingency odor no reward trial ' + str(int(self.counter[types])))
 
-            odor_on = False
+
             r_code = [141, 140]
             w_code = [61, 60]
             self.run_odor_module(odor_on, r_code)
@@ -242,7 +239,7 @@ class SelinaTraining(Measurement):
         if odor_on:
             print('opening odor port')
             self.reward_odor.high()
-            # self.OdorOnCopy.high()  # ？？？
+
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
             # self.save_training()
@@ -254,19 +251,11 @@ class SelinaTraining(Measurement):
 
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])
-            # self.save_training()
+
         else:
-            # print('opening odor port')
-            # self.non_reward_odor.high()
-            # d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            # d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
-            # self.save_training()
+
             self.check_licking_1spout(self.duration_odor_on)
-            # print('closing odor port')
-            # self.reward_odor.low()
-            # d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            # d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])
-            # # self.save_training()
+
 
 
 
@@ -279,23 +268,19 @@ class SelinaTraining(Measurement):
             self.waterR.high()
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[0])
-            # self.save_training()
+
             self.check_licking_1spout(self.duration_water_large)  # this parameter hasn't een defined
 
             print('closing water valve')
             self.waterR.low()
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[1])
-            # self.save_training()
+
 
         else:
-            # d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            # d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[0])
-            # self.save_training()
+
             self.check_licking_1spout(self.duration_water_large)
-            # d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            # d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[1])
-            # self.save_training()
+
 
 #     def camera_action(self):
 #         '''
