@@ -47,27 +47,28 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         self.list = [7, 6]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C16/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C14/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = True
         self.licknum = 1
 
 
-        self.numtrials = 100 #need to be 20*
+        self.numtrials = 200 #need to be 20*
         # pre training
-        self.p_go = 0.8
-        self.p_no_go = 0.1
+        self.p_go = 0.75
+        self.p_reward_go = 0.8
+        self.p_no_go = 0.15
         self.p_empty = 0.1
 
-        self.counter = np.zeros(3)
+        self.counter = np.zeros(4)
 
-        self.duration_rec_on_before = 2
+        self.duration_rec_on_before = 2.5
         self.duration_odor_on = 1
         self.duration_odor_to_action = 0
         self.duration_action_window = 2.5
         self.duration_water_large = 0.1
-        self.duration_rec_on_after = 4
+        self.duration_rec_on_after = 3
         self.duration_ITI = np.random.exponential(2, size=self.numtrials)
 
         self.waterline = 0
@@ -118,13 +119,15 @@ class SelinaTraining(Measurement):
         # generate trial type
         trialtypes = np.zeros(self.numtrials)
         for i in range(int(self.numtrials/20)):
-            train_go = np.zeros(int(20 * self.p_go))  # code 0
+            train_go = np.zeros(int(round(20 * self.p_go * self.p_reward_go)))  # code 0
             train_nogo = np.ones(int(20 * self.p_no_go))  # code 1
             temp_comb1 = np.concatenate((train_go,train_nogo))
 
             train_empty = np.ones(int(20 * self.p_empty)) * 2  # code 2
+            train_go_omission = np.ones(int(round(20 * self.p_go * (1-self.p_reward_go)))) * 3 # code 3
 
-            temp_comb2 = np.concatenate((temp_comb1, train_empty))
+            temp = np.concatenate((temp_comb1, train_empty))
+            temp_comb2 = np.concatenate((temp, train_go_omission))
             random.shuffle(temp_comb2)
             trialtypes[20*i:20*(i+1)] = temp_comb2
 
@@ -224,7 +227,7 @@ class SelinaTraining(Measurement):
             r_code = [141, 140]
             w_code = [61, 60]
             self.run_odor_module(odor_on,is_go, r_code)
-            self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)  ### can be a problem
+            self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)
             rewar_on = False
             self.run_reward_module(reward_on, w_code)
         elif types == 2:
@@ -235,8 +238,20 @@ class SelinaTraining(Measurement):
             w_code = [71, 70]
            # self.run_odor_module(odor_on, r_code)
             self.check_licking_1spout(self.duration_odor_on)
-            self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)  ### can be a problem
+            self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)
             reward_on = False
+            self.run_reward_module(reward_on, w_code)
+        elif types == 3:
+            print('go omission trial ' + str(int(self.counter[types])))
+
+            odor_on = True # contingency odor comes
+            is_go = True
+
+            r_code = [131, 130]
+            w_code = [51, 50]
+            self.run_odor_module(odor_on, is_go, r_code)
+            self.check_licking_1spout(self.duration_odor_to_action + self.duration_action_window)
+
             self.run_reward_module(reward_on, w_code)
 
         self.counter[types] += 1
