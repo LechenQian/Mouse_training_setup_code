@@ -9,13 +9,13 @@ import cv2
 # water = DAQSimpleDOTask('Dev1/port0/line0')
 water = DAQSimpleDOTask('Dev2_SELECT/port0/line0')
 
-timeout = time.time() + 1200
+timeout = time.time() + 1000
 count_drop = 0
 lickR = DAQSimpleDITask('Dev2_SELECT/port1/line0')
 water.high()
-time.sleep(0.1)
+time.sleep(0.5)
 water.low()
-while time.time() < timeout and count_drop < 200:
+while time.time() < timeout and count_drop < 300:
 
     lick = lickR.read()
     if lick:
@@ -23,11 +23,11 @@ while time.time() < timeout and count_drop < 200:
         print(count_drop)
         time.sleep(5)
         water.high()
-        time.sleep(0.1)
+        time.sleep(0.5)
         water.low()
 
-    else:
-        continue
+    #else:
+    #   continue
 
     time.sleep(0.01)
 
