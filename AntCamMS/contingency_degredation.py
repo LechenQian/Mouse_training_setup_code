@@ -100,22 +100,32 @@ class SelinaTraining(Measurement):
         num_4 = int(total_num * percent_4)
         num_single_2 = int(total_num * percent_single_2)
         print('Type0:non-contingency reward',num_1,'\nType1:contingency reward',20-num_1-num_3-num_4,'\nType2:non-contingency non reward',num_3,'\nType3:contingency non reward',num_4,' \nin every 20 trials.')
-        _data = [0] * num_1 + [2] * num_3 + [1] * num_single_2 + [3] * num_4
-        random.shuffle(_data)
-
-        while _data[-1] == 0:
+        _data = [0] * num_1 + [2] * num_3 + [1] * num_single_2 + [1] * num_4
+        trial_data = []
+        for token in range(int(self.numtrials / 20)):
             random.shuffle(_data)
 
-        data = []
-        for val in _data:
-            data = data + [0, 1] if val == 0 else data + [val]
+            while _data[-1] == 0:
+                random.shuffle(_data)
 
-        # check of love
-        for i, val in enumerate(data):
-            if val == 0:
-                assert data[i + 1] == 1, print("0 not followed by 1!")
-        data = data * int(self.numtrials/20)
-        return data
+            data = []
+            for val in _data:
+                data = data + [0, 1] if val == 0 else data + [val]
+
+            # check of love
+            for i, val in enumerate(data):
+                if val == 0:
+                    assert data[i + 1] == 1, print("0 not followed by 1!")
+
+            indices_of_1 = [i for i, x in enumerate(data) if x == 1]
+
+            indices_to_replace_1_to_3 = random.sample(indices_of_1, num_4)
+            for idx in indices_to_replace_1_to_3:
+                data[idx] = 3
+            print(data)
+            trial_data += data
+        return trial_data
+
     def run(self):
         try:
             os.mkdir(self.events_path)
