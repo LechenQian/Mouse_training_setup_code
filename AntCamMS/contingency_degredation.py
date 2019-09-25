@@ -47,8 +47,8 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         self.list = [7, 6]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C16/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
-        self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'session_1.xlsx'
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C15/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
+        self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'test.xlsx'
         self.reward_odor_index = [1, 0] #odor list index change according to mi
         self.operant = True
         self.licknum = 1
@@ -61,9 +61,9 @@ class SelinaTraining(Measurement):
         self.p_reward_USwoCS = 0.4
 
         # #C17, 19, 20, 18
-        self.p_conbynoncon = 0.5  # total water volumn should keep the same
-        self.p_reward_USwCS = 0.8  # self.p_conbynoncon*self.p_reward_USwCS + (1-self.p_conbynoncon)*self.p_USwoCs = p_pretraining_go
-        self.p_reward_USwoCS = 0.8
+        # self.p_conbynoncon = 0.5  # total water volumn should keep the same
+        # self.p_reward_USwCS = 0.8  # self.p_conbynoncon*self.p_reward_USwCS + (1-self.p_conbynoncon)*self.p_USwoCs = p_pretraining_go
+        # self.p_reward_USwoCS = 0.8
 
         self.counter = np.zeros(4)
 
@@ -73,7 +73,7 @@ class SelinaTraining(Measurement):
         self.duration_odor_on = 1
         self.duration_odor_to_action = 0
         self.duration_action_window = 2.5
-        self.duration_water_large = 0.1
+        self.duration_water_large = 0.15
         self.duration_rec_on_after = 3
         self.duration_ITI = np.random.exponential(2, size=self.numtrials)
 
@@ -84,13 +84,13 @@ class SelinaTraining(Measurement):
         percent_1 = round((1 - self.p_conbynoncon)*self.p_reward_USwoCS,2) #non-con rewarded
 
         percent_3 = round((1 - self.p_conbynoncon)*(1-self.p_reward_USwoCS),2) # non-con no reward
-        print(percent_3)
+
         percent_4 = round(self.p_conbynoncon*(1-self.p_reward_USwCS),2) # con no reward
         percent_coupled_2 = percent_1
         percent_single_2 = round(1 - percent_1 - percent_coupled_2 - percent_3 - percent_4,2)
         percent_2 = percent_coupled_2 + percent_single_2
-        print(percent_single_2)
-        assert percent_single_2 > 0, print("invalid ratio")
+
+        assert percent_single_2 >= 0, print("invalid ratio")
 
         sum_freq = percent_1 + percent_2 + percent_3 + percent_4
         assert abs(sum_freq - 1) < 1e-3, print("Sum of frequent ({}) not equal to 1".format(sum_freq))
@@ -99,8 +99,7 @@ class SelinaTraining(Measurement):
         num_3 = int(total_num * percent_3)
         num_4 = int(total_num * percent_4)
         num_single_2 = int(total_num * percent_single_2)
-        print(num_1,num_single_2,num_3,num_4)
-
+        print('Type0:non-contingency reward',num_1,'\nType1:contingency reward',20-num_1-num_3-num_4,'\nType2:non-contingency non reward',num_3,'\nType3:contingency non reward',num_4,' \nin every 20 trials.')
         _data = [0] * num_1 + [2] * num_3 + [1] * num_single_2 + [3] * num_4
         random.shuffle(_data)
 
