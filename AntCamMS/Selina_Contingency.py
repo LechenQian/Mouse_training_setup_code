@@ -109,9 +109,7 @@ class SelinaTraining(Measurement):
         self.settings.New('save_h5', dtype=bool, initial=True)
         self.settings.New('save_video', dtype=bool, initial=False)
 
-        # x and y is for transmitting signal
-        self.settings.New('x', dtype=float, initial=32, ro=True, vmin=0, vmax=63.5)
-        self.settings.New('y', dtype=float, initial=32, ro=True, vmin=0, vmax=63.5)
+
 
         # added by Nune
         self.settings.New('filename', dtype=str, initial='trial')
