@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f2a68146-ff45-4091-800b-ff455ee02d53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/Selina_Contingency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AntCamMS/ant_watch_plot.ui" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/ant_watch_plot.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AntCamMS/contingency_degredation.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/contingency_degredation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AntCamMS/go_no-go_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/go_no-go_task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cam.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_Contingency.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="117" column="64" lean-forward="true" selection-start-line="117" selection-start-column="64" selection-end-line="117" selection-end-column="64" />
+            <state relative-caret-position="227">
+              <caret line="111" column="44" lean-forward="true" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
               <folding>
                 <element signature="e#75#111#0" expanded="true" />
               </folding>
@@ -159,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="3" />
     <option name="y" value="29" />
     <option name="width" value="1590" />
@@ -591,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569442484614</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="updated">
+      <created>1582160813999</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1582160813999</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -604,7 +608,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="29" width="1590" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.18363403" />
@@ -612,7 +616,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992658" visible="true" weight="0.29065743" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992658" visible="true" weight="0.27302274" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -903,8 +907,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_Contingency.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="117" column="64" lean-forward="true" selection-start-line="117" selection-start-column="64" selection-end-line="117" selection-end-column="64" />
+        <state relative-caret-position="227">
+          <caret line="111" column="44" lean-forward="true" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
           <folding>
             <element signature="e#75#111#0" expanded="true" />
           </folding>

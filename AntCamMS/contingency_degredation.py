@@ -46,28 +46,33 @@ class OdorGen(object):
 
 class SelinaTraining(Measurement):
     def __init__(self):
-        self.list = [7, 6]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data/C15/"+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
-        self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'test.xlsx'
-        self.reward_odor_index = [1, 0] #odor list index change according to mi
-        self.operant = True
+        # please change this according to mouse
+        self.mouse = 'C19'
+        self.phase = 'habituation'
+        self.condition = 'Pavlovian'
+        self.numtrials = 160
+
+        self.list = [6, 7]
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina/experiment_data_2020_2_19_{0}/{1}/".format(self.condition,self.mouse)+datetime.datetime.now().strftime("%Y-%m-%d")+"/"
+        self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'{}.xlsx'.format(self.phase)
+        self.reward_odor_index = [0, 1] #odor list index change according to mi
+        if self.condition == 'Operant':
+            self.operant = True
+        else:
+            self.operant = False
         self.licknum = 1
 
+        #C22, C21
+        # self.p_conbynoncon = 0.5 # total water volumn should keep the same
+        # self.p_reward_USwCS = 0.8 #self.p_conbynoncon*self.p_reward_USwCS + (1-self.p_conbynoncon)*self.p_USwoCs = p_pretraining_go
+        # self.p_reward_USwoCS = 0.4
 
-        self.numtrials = 160
-        # # C22, C21
-        self.p_conbynoncon = 0.5 # total water volumn should keep the same
-        self.p_reward_USwCS = 0.8 #self.p_conbynoncon*self.p_reward_USwCS + (1-self.p_conbynoncon)*self.p_USwoCs = p_pretraining_go
-        self.p_reward_USwoCS = 0.4
-
-        # #C17, 19, 20, 18
-        # self.p_conbynoncon = 0.5  # total water volumn should keep the same
-        # self.p_reward_USwCS = 0.8  # self.p_conbynoncon*self.p_reward_USwCS + (1-self.p_conbynoncon)*self.p_USwoCs = p_pretraining_go
-        # self.p_reward_USwoCS = 0.8
+        #C17, 19, 20, 18
+        self.p_conbynoncon = 0.5  # total water volumn should keep the same
+        self.p_reward_USwCS = 0.8  # self.p_conbynoncon*self.p_reward_USwCS + (1-self.p_conbynoncon)*self.p_USwoCs = p_pretraining_go
+        self.p_reward_USwoCS = 0.8
 
         self.counter = np.zeros(4)
-
-
 
         self.duration_rec_on_before = 2.5
         self.duration_odor_on = 1
@@ -80,16 +85,15 @@ class SelinaTraining(Measurement):
         self.waterline = 0
         self.filename = self.events_path + self.events_filename
     def generate_trial(self):
-        total_num = 20
-        percent_1 = round((1 - self.p_conbynoncon)*self.p_reward_USwoCS,2) #non-con rewarded
+        total_num = 20 #trial type distribution for every 20 trials are the same, the order is shuffled
 
-        percent_3 = round((1 - self.p_conbynoncon)*(1-self.p_reward_USwoCS),2) # non-con no reward
-
-        percent_4 = round(self.p_conbynoncon*(1-self.p_reward_USwCS),2) # con no reward
-        percent_coupled_2 = percent_1
+        ## 0: trial type 1; 1: trial type 2; 2: trial type 3; 3: trial type 4
+        percent_1 = round((1 - self.p_conbynoncon)*self.p_reward_USwoCS,2) #non-cont rewarded#
+        percent_3 = round((1 - self.p_conbynoncon)*(1-self.p_reward_USwoCS),2) # non-cont no reward
+        percent_4 = round(self.p_conbynoncon*(1-self.p_reward_USwCS),2) # cont no reward #go omission
+        percent_coupled_2 = percent_1 # cont reward #type 2 trial that follows type 1
         percent_single_2 = round(1 - percent_1 - percent_coupled_2 - percent_3 - percent_4,2)
         percent_2 = percent_coupled_2 + percent_single_2
-
         assert percent_single_2 >= 0, print("invalid ratio")
 
         sum_freq = percent_1 + percent_2 + percent_3 + percent_4
@@ -128,7 +132,7 @@ class SelinaTraining(Measurement):
 
     def run(self):
         try:
-            os.mkdir(self.events_path)
+            os.makedirs(self.events_path)
         except OSError:
             print("The directory %s existed" % self.events_path)
         else:
