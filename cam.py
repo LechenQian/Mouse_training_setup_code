@@ -3,16 +3,17 @@ import cv2
 
 
 cv2.namedWindow("preview")
-vc = cv2.VideoCapture(0)
+vc = cv2.VideoCapture(-1)
 
 
 # vc.set(cv2.CAP_FFMPEG,True)
 # vc.set(cv2.CAP_PROP_FORMAT,1)
-vc.set(cv2.CAP_PROP_FPS,8)
+vc.set(cv2.CAP_PROP_FPS, 8)
 if vc.isOpened(): # try to get the first frame
     rval, frame = vc.read()
 else:
     rval = False
+    print(rval)
 
 while rval:
 

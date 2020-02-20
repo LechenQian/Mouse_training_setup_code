@@ -87,8 +87,6 @@ class SelinaTraining(Measurement):
     #     self.p_USwCS = 0.5
     #     self.p_USwoCS = 0.5
 
-
-
     def setup(self):
         """
         Runs once during App initialization.
@@ -121,6 +119,10 @@ class SelinaTraining(Measurement):
         self.settings.New('view_only', dtype=bool, initial=False)
         self.settings.New('lick_status', dtype=int, initial=0)
 
+        # added for Selina
+        self.settings.New('lick_on', dtype=bool, initial = False, ro = True)
+
+
 
         # Define how often to update display during a run
         self.display_update_period = 0.01
@@ -136,8 +138,6 @@ class SelinaTraining(Measurement):
         # self.vc = cv2.VideoCapture(0)
         # self.vc.set(cv2.CAP_FFMPEG, True)
         # self.vc.set(cv2.CAP_PROP_FPS, 30)
-
-
 
     def setup_figure(self):
         """
@@ -162,6 +162,13 @@ class SelinaTraining(Measurement):
 
         # counter used for reducing refresh rate
         self.wide_disp_counter = 0
+
+        # connect setting to user interface lick indicator
+        self.settings.lick_on.connect_to_widget(self.ui.lick_checkBox)
+
+        # change lick indicator into blue light
+        self.ui.lick_checkBox.setStyleSheet(
+            'QCheckBox{color:blue;}QCheckBox::indicator:checked{image: url(./icons/c_b.png);}QCheckBox::indicator:unchecked{image: url(./icons/uc_b.png);}')
 
     def update_display(self):
         """
@@ -330,7 +337,7 @@ class SelinaTraining(Measurement):
         print('FINISHED ASSOCIATION TRAINING')
 
 
-        if self.settings.save_video.value():
+        if self.settings.save_video.value:
             self.recorder.close()
 
 
@@ -338,7 +345,6 @@ class SelinaTraining(Measurement):
 
         checkperiod = 0.01
         timeout = time.time() + interval
-
         right_lick_last = 0
         while time.time() < timeout:
             right_lick = self.lickR.read()
@@ -349,10 +355,12 @@ class SelinaTraining(Measurement):
                     print('Lick')
                     d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
                     d = self.ws.cell(row=self.ws.max_row, column=2, value=11)
+                    self.settings.lick_on.update_value(True)
                 else:
                     self.settings.lick_status.update_value(10)
                     d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
                     d = self.ws.cell(row=self.ws.max_row, column=2, value=10)
+                    self.settings.lick_on.update_value(False)
             else:
                 self.settings.lick_status.update_value(0)
 
