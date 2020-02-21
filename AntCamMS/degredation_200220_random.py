@@ -47,8 +47,8 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         # please change this according to mouse
-        self.mouse = 'C17'
-        self.phase = 'cond'
+        self.mouse = 'C19'
+        self.phase = 'deg'
         self.condition = 'Pav'
         self.numtrials = 160
 
@@ -63,12 +63,15 @@ class SelinaTraining(Measurement):
             self.operant = False
             self.licknum = 0
 
+        #C22, C21
+        # self.p_conbynoncon = 0.5 # total water volumn should keep the same
+        # self.p_reward_USwCS = 0.8 #self.p_conbynoncon*self.p_reward_USwCS + (1-self.p_conbynoncon)*self.p_USwoCs = p_pretraining_go
+        # self.p_reward_USwoCS = 0.4
 
-        # pre training
-        self.p_go = 0.5
-        self.p_reward_go = 0.8
-        self.p_no_go = 0.2
-        self.p_empty = 0.3
+        #C17, 19, 20, 18
+        self.p_conbynoncon = 0.5  # total water volumn should keep the same
+        self.p_reward_USwCS = 0.8  # self.p_conbynoncon*self.p_reward_USwCS + (1-self.p_conbynoncon)*self.p_USwoCs = p_pretraining_go
+        self.p_reward_USwoCS = 0.8
 
         self.counter = np.zeros(4)
 
@@ -82,6 +85,32 @@ class SelinaTraining(Measurement):
 
         self.waterline = 0
         self.filename = self.events_path + self.events_filename
+    def generate_trial(self):
+        total_num = 20 #trial type distribution for every 20 trials are the same, the order is shuffled
+
+        ## 0: trial type 1; 1: trial type 2; 2: trial type 3; 3: trial type 4
+        percent_1 = round((1 - self.p_conbynoncon)*self.p_reward_USwoCS,2) #non-cont rewarded#
+        percent_3 = round((1 - self.p_conbynoncon)*(1-self.p_reward_USwoCS),2) # non-cont no reward
+        percent_4 = round(self.p_conbynoncon*(1-self.p_reward_USwCS),2) # cont no reward #go omission
+
+        percent_2 = round(1 - percent_1 - percent_3 - percent_4,2)  # cont reward #type 2
+
+        assert percent_2 >= 0, print("invalid ratio")
+
+        sum_freq = percent_1 + percent_2 + percent_3 + percent_4
+        assert abs(sum_freq - 1) < 1e-3, print("Sum of frequent ({}) not equal to 1".format(sum_freq))
+
+        num_1 = int(total_num * percent_1)
+        num_3 = int(total_num * percent_3)
+        num_4 = int(total_num * percent_4)
+        num_2 = int(total_num * percent_2)
+        print('Type0:non-contingency reward',num_1,'\nType1:contingency reward',20-num_1-num_3-num_4,'\nType2:non-contingency non reward',num_3,'\nType3:contingency non reward',num_4,' \nin every 20 trials.')
+        data = [0] * num_1 + [2] * num_3 + [1] * num_single_2 + [3] * num_4
+        trial_data = []
+        for token in range(int(self.numtrials / 20)):
+            random.shuffle(data)
+            trial_data += data
+        return trial_data
 
     def run(self):
         try:
@@ -126,22 +155,9 @@ class SelinaTraining(Measurement):
         #generate trial type
 
         # generate trial type
-        trialtypes = np.zeros(self.numtrials)
-        for i in range(int(self.numtrials/20)):
-            train_go = np.zeros(int(round(20 * self.p_go * self.p_reward_go)))  # code 0
-            train_nogo = np.ones(int(20 * self.p_no_go))  # code 1
-            temp_comb1 = np.concatenate((train_go,train_nogo))
+        trialtypes = self.generate_trial()
 
-            train_empty = np.ones(int(20 * self.p_empty)) * 2  # code 2
-            train_go_omission = np.ones(int(round(20 * self.p_go * (1-self.p_reward_go)))) * 3 # code 3
-
-            temp = np.concatenate((temp_comb1, train_empty))
-            temp_comb2 = np.concatenate((temp, train_go_omission))
-            random.shuffle(temp_comb2)
-            trialtypes[20*i:20*(i+1)] = temp_comb2
-
-
-        self.trialstype = trialtypes
+        self.trialtype = trialtypes
         print('================== Trial Types =================')
         print(trialtypes)
 
@@ -149,23 +165,29 @@ class SelinaTraining(Measurement):
             print('================================================')
 
             print('trial number: ', t)
-
+            print()
 
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=101) #trial start
-            d = self.ws.cell(row=self.ws.max_row, column=3, value= 'trial{}'.format(int(trialtypes[t]))) #trial type
-            # code: 0--go w rward; 1--no go; 2--empty; 3--go w/o reward
+            d = self.ws.cell(row=self.ws.max_row, column=2, value=101)
+            if int(trialtypes[t]) == 0:
+                trialcode = "noncontR"
+            elif int(trialtypes[t]) == 1:
+                trialcode = 'contR'
+            elif int(trialtypes[t]) == 2:
+                trialcode = "noncontNR"
+            else:
+                trialcode = 'contNR'
+            d = self.ws.cell(row=self.ws.max_row, column=3, value='trial_{}'.format(trialcode)) #trial type
+
+
             self.check_licking_1spout(self.duration_rec_on_before)
 
 #           main training program
-            self.run_trial_type(int(trialtypes[t]))
+            self.run_trial_type(int(trialtypes[t]),t)
 
-            self.check_licking_1spout(self.duration_rec_on_after)
 
-            # self.settings.save_video.update_value(False):
-            self.check_licking_1spout(self.duration_ITI[t])
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=100) #end
+            d = self.ws.cell(row=self.ws.max_row, column=2, value=100)
             self.wb.save(self.filename)
 
         odors_cue.initiate()
@@ -214,69 +236,63 @@ class SelinaTraining(Measurement):
             reward_on = False
         return reward_on
 
-    def run_trial_type(self,types):
+    def run_trial_type(self,types,t):
         odor_on = False
         reward_on = False
         if types == 0:
-            print('go trial ' + str(int(self.counter[types])))
+            print('non-contingency odor reward trial ' + str(int(self.counter[types])))
 
-            odor_on = True # contingency odor comes
-            is_go = True
-
-            r_code = [131, 130]
-            w_code = [51, 50]
-            self.run_odor_module(odor_on, is_go, r_code)
-            self.check_licking_1spout(self.duration_odor_to_action)
-            reward_on = self.check_licking_1spout(self.duration_action_window, self.operant)  ### can be a problem
-            self.run_reward_module(reward_on, w_code)
-
-        elif types == 1:
-            print('no go trial ' + str(int(self.counter[types])))
-
-            odor_on = True
-            is_go = False
-            r_code = [141, 140]
-            w_code = [61, 60]
-            self.run_odor_module(odor_on,is_go, r_code)
-            self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)
-            rewar_on = False
-            self.run_reward_module(reward_on, w_code)
-        elif types == 2:
-            print('empty trial ' + str(int(self.counter[types])))
-            # odor false: control odor comes
+            # contingency odor comes
 
             r_code = [151, 150]
-            w_code = [71, 70]
-           # self.run_odor_module(odor_on, r_code)
-            self.check_licking_1spout(self.duration_odor_on)
+            w_code = [51, 50]
+            self.run_odor_module(odor_on, r_code)
             self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)
-            reward_on = False
+            reward_on = True
             self.run_reward_module(reward_on, w_code)
-        elif types == 3:
-            print('go omission trial ' + str(int(self.counter[types])))
 
-            odor_on = True # contingency odor comes
-            is_go = True
 
+        elif types == 1:
+            print('contingency odor reward trial ' + str(int(self.counter[types])))
+
+            odor_on = True
             r_code = [131, 130]
             w_code = [51, 50]
-            self.run_odor_module(odor_on, is_go, r_code)
-            self.check_licking_1spout(self.duration_odor_to_action + self.duration_action_window)
-
+            self.run_odor_module(odor_on, r_code)
+            self.check_licking_1spout(self.duration_odor_to_action)
+            reward_on = self.check_licking_1spout(self.duration_action_window, self.operant)
             self.run_reward_module(reward_on, w_code)
+            self.check_licking_1spout(self.duration_rec_on_after)
+            self.check_licking_1spout(self.duration_ITI[t])
+        elif types == 2:
+            print(' non-contingency no reward trial ' + str(int(self.counter[types])))
+            # odor false: control odor comes
+            w_code = [51, 50]
+
+            self.check_licking_1spout(self.duration_odor_on)
+            self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)
+            self.run_reward_module(reward_on, w_code)
+        elif types == 3:
+            print('contingency odor no reward trial ' + str(int(self.counter[types])))
+            odor_on = True
+            r_code = [131, 130]
+            w_code = [51, 50]
+            self.run_odor_module(odor_on, r_code)
+            self.check_licking_1spout(self.duration_odor_to_action)  ### can be a problem
+            self.check_licking_1spout(self.duration_action_window)
+            self.run_reward_module(reward_on, w_code)
+            self.check_licking_1spout(self.duration_rec_on_after)
+            self.check_licking_1spout(self.duration_ITI[t])
 
         self.counter[types] += 1
 
         self.wb.save(self.filename)
 
-    def run_odor_module(self,odor_on, is_go, r_code):
+    def run_odor_module(self,odor_on, r_code):
         if odor_on:
             print('opening odor port')
-            if is_go:
-                self.reward_odor.high()
-            else:
-                self.non_reward_odor.high()
-            # self.OdorOnCopy.high()  # ？？？
+            self.reward_odor.high()
+
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
             # self.save_training()
@@ -284,10 +300,7 @@ class SelinaTraining(Measurement):
             self.check_licking_1spout(self.duration_odor_on)
 
             print('closing odor port')
-            if is_go:
-                self.reward_odor.low()
-            else:
-                self.non_reward_odor.low()
+            self.reward_odor.low()
 
             d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
             d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])

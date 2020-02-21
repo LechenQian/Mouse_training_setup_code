@@ -109,7 +109,9 @@ class SelinaTraining(Measurement):
         self.settings.New('save_h5', dtype=bool, initial=True)
         self.settings.New('save_video', dtype=bool, initial=False)
 
-
+        # x and y is for transmitting signal
+        self.settings.New('x', dtype=float, initial=32, ro=True, vmin=0, vmax=63.5)
+        self.settings.New('y', dtype=float, initial=32, ro=True, vmin=0, vmax=63.5)
 
         # added by Nune
         self.settings.New('filename', dtype=str, initial='trial')
@@ -118,24 +120,28 @@ class SelinaTraining(Measurement):
         self.settings.New('lick_status', dtype=int, initial=0)
 
         # added for Selina
+
+        # connect lick indicator to settings
         self.settings.New('lick_on', dtype=bool, initial = False, ro = True)
 
-
+        # change the lick indicator into blue light
+        #self.ui.right_lick_ind_checkBox.setStyleSheet(
+        #    'QCheckBox{color:blue;}QCheckBox::indicator:checked{image: url(./icons/c_b.png);}QCheckBox::indicator:unchecked{image: url(./icons/uc_b.png);}')
 
         # Define how often to update display during a run
         self.display_update_period = 0.01
 
         # Convenient reference to the hardware used in the measurement
-        self.wide_cam = self.app.hardware['USB2.0 Video Capture']
+        self.wide_cam = self.app.hardware['HD Webcam C270']
         # self.recorder = self.app.hardware['flirrec']
 
         # setup experiment condition
-        # self.wide_cam.settings.frame_rate.update_value(8)
+        #self.wide_cam.settings.frame_rate.update_value(8)
         self.wide_cam.read_from_hardware()
 
-        # self.vc = cv2.VideoCapture(0)
-        # self.vc.set(cv2.CAP_FFMPEG, True)
-        # self.vc.set(cv2.CAP_PROP_FPS, 30)
+        self.vc = cv2.VideoCapture(0)
+        self.vc.set(cv2.CAP_FFMPEG, True)
+        self.vc.set(cv2.CAP_PROP_FPS, 30)
 
     def setup_figure(self):
         """
@@ -161,12 +167,8 @@ class SelinaTraining(Measurement):
         # counter used for reducing refresh rate
         self.wide_disp_counter = 0
 
-        # connect setting to user interface lick indicator
-        self.settings.lick_on.connect_to_widget(self.ui.lick_checkBox)
-
-        # change lick indicator into blue light
-        self.ui.lick_checkBox.setStyleSheet(
-            'QCheckBox{color:blue;}QCheckBox::indicator:checked{image: url(./icons/c_b.png);}QCheckBox::indicator:unchecked{image: url(./icons/uc_b.png);}')
+        # connect setting to user interface
+        #self.settings.lick_on.connect_to_widget(self.ui.lick_checkBox)
 
     def update_display(self):
         """
@@ -176,22 +178,11 @@ class SelinaTraining(Measurement):
         """
 
         # check availability of display queue of the wide camera
-        if not hasattr(self, 'wide_disp_queue'):
-            pass
-        elif self.wide_disp_queue.empty():
-            pass
-        else:
-            try:
-                wide_disp_image = self.wide_disp_queue.get()
-                if type(wide_disp_image) == np.ndarray:
-                    if wide_disp_image.shape == (
-                    self.wide_cam.settings.height.value(), self.wide_cam.settings.width.value()):
-                        try:
-                            self.wide_cam_image.setImage(wide_disp_image)
-                        except Exception as ex:
-                            print('Error: %s' % ex)
-            except Exception as ex:
-                print("Error: %s" % ex)
+        try:
+            ret, frame = self.vc.read()
+            self.wide_cam_image.setImage(np.flipud(np.fliplr(frame[:, :, 2::-1].transpose(1, 0, 2))))
+        except Exception as ex:
+            print("Error: %s" % ex)
 
     def run(self):
 

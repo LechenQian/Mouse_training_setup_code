@@ -22,7 +22,7 @@ class AntCamApp(BaseMicroscopeApp):
         from AntCamHW.flircam.camera_hw import CameraHW
         wide_cam = CameraHW(self)
         # wide_cam.settings.camera_id.update_value(int(0))
-        wide_cam.name = 'USB2.0 Video Capture'
+        wide_cam.name = 'HD Webcam C270'
         self.add_hardware(wide_cam)
         #
         # from AntCamHW.flircam.flirrec_hw import FLIRRecHW
@@ -48,7 +48,7 @@ if __name__ == '__main__':
     
     app = AntCamApp(sys.argv)
     
-    app.hardware['USB2.0 Video Capture'].connected.update_value(True)
+    app.hardware['HD Webcam C270'].connected.update_value(True)
     # app.hardware['flirrec'].connected.update_value(True)
     #app.hardware['daq_timer'].connected.update_value(True)
     
