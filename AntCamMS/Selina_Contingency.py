@@ -125,8 +125,8 @@ class SelinaTraining(Measurement):
         self.settings.New('lick_on', dtype=bool, initial = False, ro = True)
 
         # change the lick indicator into blue light
-        #self.ui.right_lick_ind_checkBox.setStyleSheet(
-        #    'QCheckBox{color:blue;}QCheckBox::indicator:checked{image: url(./icons/c_b.png);}QCheckBox::indicator:unchecked{image: url(./icons/uc_b.png);}')
+        self.ui.right_lick_ind_checkBox.setStyleSheet(
+            'QCheckBox{color:blue;}QCheckBox::indicator:checked{image: url(./icons/c_b.png);}QCheckBox::indicator:unchecked{image: url(./icons/uc_b.png);}')
 
         # Define how often to update display during a run
         self.display_update_period = 0.01
@@ -157,6 +157,16 @@ class SelinaTraining(Measurement):
         self.wide_cam_layout = pg.GraphicsLayoutWidget()
         self.ui.wide_cam_groupBox.layout().addWidget(self.wide_cam_layout)
 
+        # added by selina
+        # Set up pyqtgraph graph_layout in the UI
+        self.licking_layout = pg.GraphicsLayoutWidget()
+        self.ui.plot_groupBox.layout().addWidget(self.licking_layout)
+
+        # Create PlotItem object (a set of axes)
+        self.plot = self.licking_layout.addPlot(title="Sine Wave Readout Plot")
+        # Create PlotDataItem object ( a scatter plot on the axes )
+        self.optimize_plot_line = self.plot.plot([0])
+
         # create camera image graphs
         self.wide_cam_view = pg.ViewBox()
         # rval, frame = self.vc.read()
@@ -167,8 +177,12 @@ class SelinaTraining(Measurement):
         # counter used for reducing refresh rate
         self.wide_disp_counter = 0
 
+
+
+
+
         # connect setting to user interface
-        #self.settings.lick_on.connect_to_widget(self.ui.lick_checkBox)
+        self.settings.lick_on.connect_to_widget(self.ui.lick_checkBox)
 
     def update_display(self):
         """

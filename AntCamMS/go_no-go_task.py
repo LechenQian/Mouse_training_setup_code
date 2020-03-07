@@ -47,7 +47,7 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         # please change this according to mouse
-        self.mouse = 'C17'
+        self.mouse = 'C20'  #OT-GC-2
         self.phase = 'cond'
         self.condition = 'Pav'
         self.numtrials = 160
@@ -65,10 +65,10 @@ class SelinaTraining(Measurement):
 
 
         # pre training
-        self.p_go = 0.5
+        self.p_go = 1 #0.5
         self.p_reward_go = 0.8
-        self.p_no_go = 0.2
-        self.p_empty = 0.3
+        self.p_no_go = 0#0.2
+        self.p_empty = 0#0.3
 
         self.counter = np.zeros(4)
 
@@ -76,7 +76,7 @@ class SelinaTraining(Measurement):
         self.duration_odor_on = 1
         self.duration_odor_to_action = 0
         self.duration_action_window = 2.5
-        self.duration_water_large = 0.1
+        self.duration_water_large = 0.08 #0.1
         self.duration_rec_on_after = 3
         self.duration_ITI = np.random.exponential(2, size=self.numtrials)
 

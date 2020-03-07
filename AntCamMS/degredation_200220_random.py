@@ -47,7 +47,7 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         # please change this according to mouse
-        self.mouse = 'C19'
+        self.mouse = 'C17' #OT-GC-2
         self.phase = 'deg'
         self.condition = 'Pav'
         self.numtrials = 160
@@ -79,7 +79,7 @@ class SelinaTraining(Measurement):
         self.duration_odor_on = 1
         self.duration_odor_to_action = 0
         self.duration_action_window = 2.5
-        self.duration_water_large = 0.1
+        self.duration_water_large = 0.08
         self.duration_rec_on_after = 3
         self.duration_ITI = np.random.exponential(2, size=self.numtrials)
 
@@ -105,7 +105,7 @@ class SelinaTraining(Measurement):
         num_4 = int(total_num * percent_4)
         num_2 = int(total_num * percent_2)
         print('Type0:non-contingency reward',num_1,'\nType1:contingency reward',20-num_1-num_3-num_4,'\nType2:non-contingency non reward',num_3,'\nType3:contingency non reward',num_4,' \nin every 20 trials.')
-        data = [0] * num_1 + [2] * num_3 + [1] * num_single_2 + [3] * num_4
+        data = [0] * num_1 + [2] * num_3 + [1] * num_2 + [3] * num_4
         trial_data = []
         for token in range(int(self.numtrials / 20)):
             random.shuffle(data)
@@ -250,6 +250,8 @@ class SelinaTraining(Measurement):
             self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)
             reward_on = True
             self.run_reward_module(reward_on, w_code)
+            self.check_licking_1spout(self.duration_rec_on_after)
+            self.check_licking_1spout(self.duration_ITI[t])
 
 
         elif types == 1:
@@ -272,6 +274,8 @@ class SelinaTraining(Measurement):
             self.check_licking_1spout(self.duration_odor_on)
             self.check_licking_1spout(self.duration_odor_to_action+self.duration_action_window)
             self.run_reward_module(reward_on, w_code)
+            self.check_licking_1spout(self.duration_rec_on_after)
+            self.check_licking_1spout(self.duration_ITI[t])
         elif types == 3:
             print('contingency odor no reward trial ' + str(int(self.counter[types])))
             odor_on = True
