@@ -47,7 +47,7 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         # please change this according to mouse
-        self.mouse = 'C17' #OT-GC-2
+        self.mouse = 'C22' #OT-GC-2
         self.phase = 'deg'
         self.condition = 'Pav'
         self.numtrials = 160

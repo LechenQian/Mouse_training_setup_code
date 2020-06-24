@@ -65,7 +65,7 @@ class SelinaTraining(Measurement):
 
 
         # pre training
-        self.p_go = 1 #0.5
+        self.p_go = 1#0.5
         self.p_reward_go = 0.8
         self.p_no_go = 0#0.2
         self.p_empty = 0#0.3
