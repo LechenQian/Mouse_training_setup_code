@@ -21,7 +21,7 @@ while time.time() < timeout and count_drop < 100:
     if lick:
         count_drop += 1
         print(count_drop)
-        time.sleep(4)
+        time.sleep(5)
         water.high()
         time.sleep(0.08)
         water.low()

@@ -130,8 +130,8 @@ class SelinaTraining(Measurement):
 
         # create excel workbook
 
-        self.wb = Workbook()
-        self.ws = self.wb.active
+        self.wb1 = Workbook()
+        self.ws1 = self.wb1.active
 
 
         #generate trial type
@@ -181,9 +181,9 @@ class SelinaTraining(Measurement):
             print('================================================')
             print('trial number: ', t)
 
-            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=101) #trial start
-            d = self.ws.cell(row=self.ws.max_row, column=3, value= 'trial{}'.format(int(trialtypes[t]))) #trial type
+            d = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
+            d = self.ws1.cell(row=self.ws1.max_row, column=2, value=101) #trial start
+            d = self.ws1.cell(row=self.ws1.max_row, column=3, value= 'trial{}'.format(int(trialtypes[t]))) #trial type
             # code: 0--go w rward; 1--no go; 2--empty; 3--go w/o reward; 4 --unpred water; 5 -- c control odor； 6 -- c control odor w/o
             if int(trialtypes[t]) in [7,8]:
 
@@ -199,9 +199,9 @@ class SelinaTraining(Measurement):
                 self.check_licking_1spout(self.duration_rec_on_after)
             # self.settings.save_video.update_value(False):
             self.check_licking_1spout(self.duration_ITI[t])
-            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=100) #end
-            self.wb.save(self.filename)
+            d = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
+            d = self.ws1.cell(row=self.ws1.max_row, column=2, value=100) #end
+            self.wb1.save(self.filename)
         odors_cue.initiate()
         odors_cue.close()
         self.waterR.low()
@@ -219,14 +219,14 @@ class SelinaTraining(Measurement):
             if right_lick != right_lick_last:
                 if right_lick:
                     print('Lick')
-                    d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-                    d = self.ws.cell(row=self.ws.max_row, column=2, value=11)
+                    d = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
+                    d = self.ws1.cell(row=self.ws1.max_row, column=2, value=11)
                 # self.save_training()
                     if check_action:
                         count += 1
                 else:
-                    d = self.ws.cell(row=(self.ws.max_row+1), column=1, value=time.clock())
-                    d = self.ws.cell(row=self.ws.max_row, column=2, value=10)
+                    d = self.ws1.cell(row=(self.ws1.max_row+1), column=1, value=time.clock())
+                    d = self.ws1.cell(row=self.ws1.max_row, column=2, value=10)
             else:
                 pass
             right_lick_last = right_lick
@@ -322,14 +322,14 @@ class SelinaTraining(Measurement):
             w_code = [51, 50]
             reward_on = self.check_licking_1spout(0, self.operant)
             self.run_reward_module(reward_on, w_code)
-            self.check_licking_1spout(self.duration_odor_on+1)
+            self.check_licking_1spout(self.duration_odor_on+2)
             self.check_licking_1spout(self.duration_action_window)
 
         elif types == 8:
             print('far unpredicted water trial ' + str(int(self.counter[types])))
             w_code = [51, 50]
             self.check_licking_1spout(self.duration_odor_on)
-            self.check_licking_1spout(self.duration_odor_to_action+1)
+            self.check_licking_1spout(self.duration_odor_to_action+2)
             reward_on = self.check_licking_1spout(self.duration_action_window, self.operant)
             self.run_reward_module(reward_on, w_code)
         self.counter[types] += 1
@@ -346,8 +346,8 @@ class SelinaTraining(Measurement):
             elif is_control:
                 self.control_odor.high()
             # self.OdorOnCopy.high()  # ？？？
-            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[0])
+            d = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
+            d = self.ws1.cell(row=self.ws1.max_row, column=2, value=r_code[0])
             # self.save_training()
             self.check_licking_1spout(self.duration_odor_on)
             print('closing odor port')
@@ -358,8 +358,8 @@ class SelinaTraining(Measurement):
             elif is_control:
                 self.control_odor.low()
 
-            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=r_code[1])
+            d = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
+            d = self.ws1.cell(row=self.ws1.max_row, column=2, value=r_code[1])
         else:
             self.check_licking_1spout(self.duration_odor_on)
 
@@ -368,13 +368,13 @@ class SelinaTraining(Measurement):
             # modify! give water if licks three times within 1 s
             print('opening water valve')
             self.waterR.high()
-            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[0])
+            d = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
+            d = self.ws1.cell(row=self.ws1.max_row, column=2, value=w_code[0])
             self.check_licking_1spout(self.duration_water_large)  # this parameter hasn't een defined
             print('closing water valve')
             self.waterR.low()
-            d = self.ws.cell(row=(self.ws.max_row + 1), column=1, value=time.clock())
-            d = self.ws.cell(row=self.ws.max_row, column=2, value=w_code[1])
+            d = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
+            d = self.ws1.cell(row=self.ws1.max_row, column=2, value=w_code[1])
         else:
             self.check_licking_1spout(self.duration_water_large)
 
