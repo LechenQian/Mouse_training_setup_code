@@ -1,0 +1,1422 @@
+2020-02-20T18:44:24|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:24|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:24|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:25|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:31|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:32|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:35|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:35|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:35|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+
+2020-02-20T18:44:35|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 411, in paint
+    self.render()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\graphicsItems\ImageItem.py", line 403, in render
+    argb, alpha = fn.makeARGB(image, lut=lut, levels=levels)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\pyqtgraph\functions.py", line 950, in makeARGB
+    raise TypeError("data.shape[2] must be <= 4")
+TypeError: data.shape[2] must be <= 4
+

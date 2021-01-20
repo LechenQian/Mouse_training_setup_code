@@ -1,0 +1,7 @@
+2020-02-20T17:46:21|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 51, in <module>
+    app.hardware['USB2.0 Video Capture'].connected.update_value(True)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\helper_funcs.py", line 31, in __getitem__
+    return self._odict[key]
+KeyError: 'USB2.0 Video Capture'
+

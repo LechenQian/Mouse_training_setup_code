@@ -1,0 +1,15 @@
+2020-02-20T17:45:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 49, in <module>
+    app = AntCamApp(sys.argv)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 34, in setup
+    self.add_measurement(SelinaTraining(self))
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\measurement.py", line 93, in __init__
+    self.setup()
+  File "C:\Users\MurthyLab\Desktop\AntCam-master\AntCamMS\Selina_Contingency.py", line 135, in setup
+    self.wide_cam = self.app.hardware['USB2.0 Video Capture']
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\helper_funcs.py", line 31, in __getitem__
+    return self._odict[key]
+KeyError: 'USB2.0 Video Capture'
+

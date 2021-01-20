@@ -1,0 +1,12 @@
+2020-02-20T17:36:51|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 49, in <module>
+    app = AntCamApp(sys.argv)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 33, in setup
+    from AntCamMS.Selina_Contingency import SelinaTraining
+  File "C:\Users\MurthyLab\Desktop\AntCam-master\AntCamMS\Selina_Contingency.py", line 129
+    'QCheckBox{color:blue;}QCheckBox::indicator:checked{image: url(./icons/c_b.png);}QCheckBox::indicator:unchecked{image: url(./icons/uc_b.png);}')
+    ^
+IndentationError: unexpected indent
+

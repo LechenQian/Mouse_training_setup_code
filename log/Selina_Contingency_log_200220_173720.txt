@@ -1,0 +1,11 @@
+2020-02-20T17:37:23|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 49, in <module>
+    app = AntCamApp(sys.argv)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 334, in __init__
+    self.setup_default_ui()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 365, in setup_default_ui
+    measure.setup_figure()
+  File "C:\Users\MurthyLab\Desktop\AntCam-master\AntCamMS\Selina_Contingency.py", line 171, in setup_figure
+    self.settings.lick_on.connect_to_widget(self.ui.lick_checkBox)
+AttributeError: 'QWidget' object has no attribute 'lick_checkBox'
+

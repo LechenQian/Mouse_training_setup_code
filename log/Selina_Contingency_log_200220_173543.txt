@@ -1,0 +1,13 @@
+2020-02-20T17:35:47|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 49, in <module>
+    app = AntCamApp(sys.argv)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 34, in setup
+    self.add_measurement(SelinaTraining(self))
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\measurement.py", line 93, in __init__
+    self.setup()
+  File "C:\Users\MurthyLab\Desktop\AntCam-master\AntCamMS\Selina_Contingency.py", line 128, in setup
+    self.ui.right_lick_ind_checkBox.setStyleSheet(
+AttributeError: 'QWidget' object has no attribute 'right_lick_ind_checkBox'
+

@@ -1,0 +1,11 @@
+2019-07-18T13:15:47|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 49, in <module>
+    app = AntCamApp(sys.argv)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 22, in setup
+    from AntCamHW.flircam.camera_hw import  CameraHW
+  File "C:\Users\MurthyLab\Desktop\AntCam-master\AntCamHW\flircam\camera_hw.py", line 7, in <module>
+    from VOTAScopeHW.camera.camera_dev import CameraDev
+ModuleNotFoundError: No module named 'VOTAScopeHW'
+

@@ -1,0 +1,9 @@
+2019-07-18T14:00:23|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\measurement.py", line 25, in run
+    self.measurement._thread_run()
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\measurement.py", line 179, in _thread_run
+    self.run()
+  File "C:\Users\MurthyLab\Desktop\AntCam-master\AntCamMS\Selina_Contingency.py", line 333, in run
+    if self.settings.save_video.value():
+TypeError: 'bool' object is not callable
+

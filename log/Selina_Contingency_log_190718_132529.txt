@@ -1,0 +1,12 @@
+2019-07-18T13:25:29|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 49, in <module>
+    app = AntCamApp(sys.argv)
+  File "C:\Users\MurthyLab\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "C:/Users/MurthyLab/Desktop/AntCam-master/main_interface.py", line 22, in setup
+    from AntCamHW.flircam.camera_hw import CameraHW
+  File "C:\Users\MurthyLab\Desktop\AntCam-master\AntCamHW\flircam\camera_hw.py", line 18
+    self.settings.New(name='file_name',dtype=str,initial= 'C:\Users\MurthyLab\Test.avi' ,ro=True)
+                                                         ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+
