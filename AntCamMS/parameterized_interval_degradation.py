@@ -1,6 +1,6 @@
 '''
 Created on July 17, 2019
-
+full version taht covers all the behavioral paradigm I'm running.
 @author: Selina Qian
 '''
 from ScopeFoundry import Measurement
@@ -55,7 +55,7 @@ class SelinaTraining(Measurement):
         # please change this according to mouse
         self.mouse = 'C35'  #OT-GC-2
 
-        self.phase = 'cond' #'cond', 'deg','C_control','close','far'
+        self.phase = 'close' #'cond', 'deg','C_control','close','far'
         self.condition = 'Pav'
         self.numtrials = 200
 
@@ -334,7 +334,7 @@ class SelinaTraining(Measurement):
             self.run_reward_module(reward_on, w_code)
         self.counter[types] += 1
 
-        self.wb.save(self.filename)
+        self.wb1.save(self.filename)
 
     def run_odor_module(self, odor_on, is_go, is_control, r_code):
         if odor_on:
