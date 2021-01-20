@@ -1,6 +1,6 @@
 '''
 Created on July 17, 2019
-full version taht covers all the behavioral paradigm I'm running.
+the code for running two setup in parallel
 @author: Selina Qian
 '''
 from ScopeFoundry import Measurement
