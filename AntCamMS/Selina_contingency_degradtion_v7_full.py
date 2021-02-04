@@ -53,14 +53,14 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         # please change this according to mouse
-        self.mouse = 'C35'  #OT-GC-2
+        self.mouse = 'C37'  #OT-GC-2
 
-        self.phase = 'close' #'cond', 'deg','C_control','close','far'
+        self.phase = 'cond' #'cond', 'deg','C_control','close','far'
         self.condition = 'Pav'
-        self.numtrials = 200
+        self.numtrials = 160
 
         self.list = [7, 6, 5]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina_lab_computer_data/experiment_data_2020_5_{0}/{1}/".format(self.condition,self.mouse)
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina_lab_computer_data/experiment_data_2021_2_{0}/{1}/".format(self.condition,self.mouse)
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'{}.xlsx'.format(self.phase)
         self.odor_index = [1,0,2] #odor list index position 0 is reward, 1 is unrewarded, 2 is control c odor; so here, 7 is unrewarded, 6 is reward and 5 is c odor
         if self.condition == 'Operant':
@@ -89,7 +89,7 @@ class SelinaTraining(Measurement):
         self.duration_odor_to_action = 0
         self.duration_action_window = 2.5
         self.duration_water_large = 0.08 #0.1
-        self.duration_rec_on_after = 1
+        self.duration_rec_on_after = 2 #close 1, cond & deg 2
         self.duration_ITI = np.random.exponential(1, size=self.numtrials)
 
         self.waterline = 0

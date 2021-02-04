@@ -13,7 +13,7 @@ timeout = time.time() + 1200
 count_drop = 0
 lickR = DAQSimpleDITask('Dev2_SELECT/port1/line0')
 water.high()
-time.sleep(0.08)
+time.sleep(0.2)
 water.low()
 while time.time() < timeout and count_drop < 100:
 
