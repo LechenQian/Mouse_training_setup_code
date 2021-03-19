@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2a68146-ff45-4091-800b-ff455ee02d53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AntCamMS/new_degradation_timing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AntCamMS/Selina_contingency_degradtion_v7_full.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCamMS/Selina_contingency_degradtion_v7_full.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hab_water.py" beforeDir="false" afterPath="$PROJECT_DIR$/hab_water.py" afterDir="false" />
@@ -15,19 +16,8 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AntCamMS/parameterized_interval_degradation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_contingency_dagradation_v4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -51,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_contingency_degradtion_v7_full.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="-188">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -63,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_CD_two_setup_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="97" column="38" lean-forward="true" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
+            <state relative-caret-position="1479">
+              <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -73,10 +63,28 @@
         <entry file="file://$PROJECT_DIR$/hab_water.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_reward_timing_degradtion_v1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="55" column="36" lean-forward="true" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AntCamMS/new_degradation_timing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-569">
+              <caret line="259" column="31" selection-start-line="259" selection-start-column="31" selection-end-line="259" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -162,8 +170,10 @@
         <option value="$PROJECT_DIR$/AntCamMS/new_contingency_degradation" />
         <option value="$PROJECT_DIR$/AntCamMS/parameterized_interval_degradation.py" />
         <option value="$PROJECT_DIR$/AntCamMS/Selina_CD_two_setup_v1.py" />
-        <option value="$PROJECT_DIR$/hab_water.py" />
         <option value="$PROJECT_DIR$/AntCamMS/Selina_contingency_degradtion_v7_full.py" />
+        <option value="$PROJECT_DIR$/hab_water.py" />
+        <option value="$PROJECT_DIR$/AntCamMS/Selina_reward_timing_degradtion_v1.py" />
+        <option value="$PROJECT_DIR$/AntCamMS/new_degradation_timing.py" />
       </list>
     </option>
   </component>
@@ -206,7 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Selina_contingency_degradtion_v7_full">
+  <component name="RunManager" selected="Python.new_degradation_timing">
     <configuration name="Selina_Contingency" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="AntCam-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -249,6 +259,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Selina_reward_timing_degradtion_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AntCam-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AntCamMS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AntCamMS/Selina_reward_timing_degradtion_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="conditioning_degradation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AntCam-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,48 +293,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AntCamMS/conditioning_degradation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="degredation_200220_random" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AntCam-master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AntCamMS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AntCamMS/degredation_200220_random.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go_no-go_task" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AntCam-master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AntCamMS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AntCamMS/go_no-go_task.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,6 +343,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="new_degradation_timing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AntCam-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AntCamMS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AntCamMS/new_degradation_timing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="parameterized_interval_degradation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AntCam-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -379,19 +389,19 @@
       <item itemvalue="Python.new_contingency_degradation" />
       <item itemvalue="Python.Selina_Contingency" />
       <item itemvalue="Python.hab_water" />
-      <item itemvalue="Python.go_no-go_task" />
-      <item itemvalue="Python.degredation_200220_random" />
       <item itemvalue="Python.conditioning_degradation" />
       <item itemvalue="Python.parameterized_interval_degradation" />
       <item itemvalue="Python.Selina_contingency_degradtion_v7_full" />
+      <item itemvalue="Python.Selina_reward_timing_degradtion_v1" />
+      <item itemvalue="Python.new_degradation_timing" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.new_degradation_timing" />
+        <item itemvalue="Python.Selina_reward_timing_degradtion_v1" />
         <item itemvalue="Python.Selina_contingency_degradtion_v7_full" />
         <item itemvalue="Python.parameterized_interval_degradation" />
         <item itemvalue="Python.conditioning_degradation" />
-        <item itemvalue="Python.degredation_200220_random" />
-        <item itemvalue="Python.go_no-go_task" />
       </list>
     </recent_temporary>
   </component>
@@ -721,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611114587895</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="update the time interval after water delivery">
+      <created>1612402622261</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1612402622261</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -742,7 +759,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992658" visible="true" weight="0.20910075" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992658" visible="true" weight="0.3488624" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -813,7 +830,8 @@
     <MESSAGE value="updated" />
     <MESSAGE value="20-09-15" />
     <MESSAGE value="run on two setup enabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="run on two setup enabled" />
+    <MESSAGE value="update the time interval after water delivery" />
+    <option name="LAST_COMMIT_MESSAGE" value="update the time interval after water delivery" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/Selina-Contingency.py">
@@ -970,6 +988,16 @@
     <entry file="file://$PROJECT_DIR$/test_createfolder.py" />
     <entry file="file://$PROJECT_DIR$/to_selina.py" />
     <entry file="file://$PROJECT_DIR$/test-training-module.py" />
+    <entry file="file://$PROJECT_DIR$/AntCamMS/parameterized_interval_degradation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_contingency_dagradation_v4.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_water.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -987,6 +1015,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_CD_two_setup_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cam.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1001,39 +1036,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_CD_two_setup_v1.py">
+    <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_contingency_degradtion_v7_full.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="97" column="38" lean-forward="true" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
+        <state relative-caret-position="-188">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hab_water.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AntCamMS/parameterized_interval_degradation.py">
+    <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_reward_timing_degradtion_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="213">
+          <caret line="55" column="36" lean-forward="true" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_contingency_dagradation_v4.py">
+    <entry file="file://$PROJECT_DIR$/AntCamMS/new_degradation_timing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AntCamMS/Selina_contingency_degradtion_v7_full.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="-569">
+          <caret line="259" column="31" selection-start-line="259" selection-start-column="31" selection-end-line="259" selection-end-column="31" />
         </state>
       </provider>
     </entry>
