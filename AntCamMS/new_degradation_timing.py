@@ -54,8 +54,9 @@ class SelinaTraining(Measurement):
     def __init__(self):
         # please change this according to mouse
         self.mouse = 'C42'  #OT-GC-2
+        self.preceding_interval = 1
 
-        self.phase = 'rep_deg' #'cond', 'rep_deg'
+        self.phase = 'rep_deg' #'cond', 'rep_deg','cntl_deg'
         self.condition = 'Pav'
         self.numtrials = 100
 
@@ -73,7 +74,7 @@ class SelinaTraining(Measurement):
 
         # pre training
         self.p_go = 0.5#0.5
-        self.p_reward_go = 0.9
+        self.p_reward_go = 0.8
         self.p_no_go = 0.5#0.2
         self.p_empty = 0#0.3
         if self.phase == 'cond':
@@ -85,14 +86,14 @@ class SelinaTraining(Measurement):
         self.counter = np.zeros(9)
 
         self.duration_rec_on_before = 10
-        self.preceding_interval = 1
+
         self.bef_unpred_rew = self.duration_rec_on_before-self.preceding_interval
         self.duration_odor_on = 1
         self.duration_odor_to_action = 0
         self.duration_action_window = 2.5
         self.duration_water_large = 0.06 #0.1 if one tube, 0.18 if two tube
-        self.duration_rec_on_after = 10 #close 1, cond & deg 3
-        self.duration_ITI = np.random.exponential(6, size=self.numtrials)
+        self.duration_rec_on_after = 6 #close 1, cond & deg 3
+        self.duration_ITI = np.random.exponential(5, size=self.numtrials)
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M") + '{}_{}.xlsx'.format(self.phase,
                                                                                                         self.preceding_interval)
 
@@ -156,6 +157,12 @@ class SelinaTraining(Measurement):
                 train_go_unpred = np.ones(int(round(20 * self.p_go * self.p_reward_go))) * 2  # code 2
                 train_nogo = np.ones(int(20 * self.p_no_go))  # code 1
                 temp_comb1 = np.concatenate((train_go_unpred, train_nogo))
+                train_go_omission = np.ones(int(round(20 * self.p_go * (1 - self.p_reward_go)))) * 3  # code 3
+                temp_comb1 = np.concatenate((temp_comb1, train_go_omission))
+            elif self.phase == 'cntl_deg':
+                train_go = np.zeros(int(round(20 * self.p_go * self.p_reward_go)))  # code 0
+                train_nogo = np.ones(int(20 * self.p_no_go)) * 4  # code 4   has water
+                temp_comb1 = np.concatenate((train_go, train_nogo))
                 train_go_omission = np.ones(int(round(20 * self.p_go * (1 - self.p_reward_go)))) * 3  # code 3
                 temp_comb1 = np.concatenate((temp_comb1, train_go_omission))
 
@@ -232,6 +239,7 @@ class SelinaTraining(Measurement):
             is_go = True
             r_code = [131, 130]
             w_code = [51, 50]
+            self.check_licking_1spout(self.duration_rec_on_before)
             self.run_odor_module(odor_on, is_go, is_control, r_code)
             self.check_licking_1spout(self.duration_odor_to_action)
             reward_on = self.check_licking_1spout(self.duration_action_window, self.operant)  ### can be a problem
@@ -273,6 +281,17 @@ class SelinaTraining(Measurement):
             w_code = [51, 50]
             self.check_licking_1spout(self.duration_rec_on_before)
             self.run_odor_module(odor_on, is_go, is_control, r_code)
+        elif types == 4:
+            print('no go reward trial ' + str(int(self.counter[types])))
+
+            odor_on = True
+            is_go = False
+            r_code = [141, 140]
+            w_code = [61, 60]
+            self.check_licking_1spout(self.duration_rec_on_before)
+            self.run_odor_module(odor_on,is_go, is_control, r_code)
+            reward_on = self.check_licking_1spout(self.duration_odor_to_action + self.duration_action_window, self.operant)  ### can be a problem
+            self.run_reward_module(reward_on, w_code)
 
 
         self.counter[types] += 1

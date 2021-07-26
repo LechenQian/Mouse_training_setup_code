@@ -25,7 +25,7 @@ class OdorGen(object):
     def assign_odor(self):
         # initiate all the odor solenoids
         for item in self.odorindex:
-            self.odors_DAQ.append(DAQSimpleDOTask('Dev2_SELECT/port0/line{}'.format(item)))
+            self.odors_DAQ.append(DAQSimpleDOTask('Dev2_SELECT/port1/line{}'.format(item)))
         print('Odor {} has been properly assigned'.format(self.odorindex))
 
     def set_rewardodor(self, index: list):
@@ -55,6 +55,7 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         # please change this according to mouse
+        # this is for   RIG 1  RIG 1  RIG 1  RIG 1!!!!!!
         self.mouse = 'C53'  #OT-GC-2
 
         self.phase = 'cond' #'cond', 'deg','C_control','close','far'
@@ -94,7 +95,7 @@ class SelinaTraining(Measurement):
         self.duration_rec_on_after = 8 #close 1, cond & deg 3
         self.duration_ITI = np.random.exponential(2, size=self.numtrials)
 
-        self.waterline = 0
+        self.waterline = 1
         self.filename = self.events_path + self.events_filename
 
     def run(self):
@@ -118,7 +119,7 @@ class SelinaTraining(Measurement):
         self.waterR.low()
         # self.OdorOnCopy = DAQSimpleDOTask('Dev3/port2/line5')
         # self.OdorOnCopy.low()
-        self.lickR = DAQSimpleDITask('Dev2_SELECT/port2/line0')
+        self.lickR = DAQSimpleDITask('Dev2_SELECT/port2/line{}'.format(self.waterline))
         print('water done')
 
         # EVENT CODES
@@ -408,8 +409,5 @@ test = SelinaTraining()
 print('start')
 test.run()
 
-test = SelinaTraining()
-print('start')
-test.run()
 
 

@@ -11,7 +11,6 @@ import pickle
 import time
 from AntCamHW.daq_do.daq_do_dev import DAQSimpleDOTask
 from AntCamHW.daq_di.daq_di_dev import DAQSimpleDITask
-from AntCamHW.daq_di.daq_di_dev import DAQSimpleDITask
 from openpyxl import Workbook
 import os
 import logging
@@ -55,14 +54,14 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         # please change this according to mouse
-        self.mouse = 'C53'  #OT-GC-2
+        self.mouse = 'C43'  #OT-GC-2
 
         self.phase = 'cond' #'cond', 'deg','C_control','close','far'
         self.condition = 'Pav'
-        self.numtrials = 120
+        self.numtrials = 160
 
-        self.list = [7, 6, 5]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina_lab_computer_data/experiment_data_2021_7_{0}/{1}/".format(self.condition,self.mouse)
+        self.list = [4, 3, 2]
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina_lab_computer_data/experiment_data_2021_2_{0}/{1}/".format(self.condition,self.mouse)
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'{}.xlsx'.format(self.phase)
         self.odor_index = [1,0,2] #odor list index position 0 is reward, 1 is unrewarded, 2 is control c odor; so here, 7 is unrewarded, 6 is reward and 5 is c odor
         if self.condition == 'Operant':
@@ -90,11 +89,11 @@ class SelinaTraining(Measurement):
         self.duration_odor_on = 1
         self.duration_odor_to_action = 0
         self.duration_action_window = 2.5
-        self.duration_water_large = 0.06 #0.1 if one tube, 0.18 if two tube
-        self.duration_rec_on_after = 8 #close 1, cond & deg 3
+        self.duration_water_large = 0.1 #0.1 if one tube, 0.18 if two tube
+        self.duration_rec_on_after = 4 #close 1, cond & deg 3
         self.duration_ITI = np.random.exponential(2, size=self.numtrials)
 
-        self.waterline = 0
+        self.waterline = 1
         self.filename = self.events_path + self.events_filename
 
     def run(self):
@@ -118,7 +117,7 @@ class SelinaTraining(Measurement):
         self.waterR.low()
         # self.OdorOnCopy = DAQSimpleDOTask('Dev3/port2/line5')
         # self.OdorOnCopy.low()
-        self.lickR = DAQSimpleDITask('Dev2_SELECT/port2/line0')
+        self.lickR = DAQSimpleDITask('Dev2_SELECT/port1/line1')
         print('water done')
 
         # EVENT CODES
@@ -403,10 +402,6 @@ class SelinaTraining(Measurement):
 
 
 
-
-test = SelinaTraining()
-print('start')
-test.run()
 
 test = SelinaTraining()
 print('start')

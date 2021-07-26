@@ -56,15 +56,18 @@ class SelinaTraining(Measurement):
         # two mice together
         self.mouse = ['C35','C36']  #OT-GC-2
 
-        self.phase = 'close' #'cond', 'deg','C_control','close','far'
+        self.phase = 'cond' #'cond', 'deg','C_control','close','far'
         self.condition = 'Pav'
-        self.numtrials = 200
+        self.numtrials = 20
 
         self.list = [7, 6, 5]
         # two file saving path
-        self.events_path_0 = "C:/Users/MurthyLab/Desktop/Selina_lab_computer_data/experiment_data_2020_5_{0}/{1}/".format(self.condition,self.mouse[0])
+        self.events_path_0 = "C:/Users/MurthyLab/Desktop/Selina_lab_computer_data/experiment_data_2021_7_{0}/{1}/".format(
+            self.condition,self.mouse[0])
+        self.events_path_1 = "C:/Users/MurthyLab/Desktop/Selina_lab_computer_data/experiment_data_2021_7_{0}/{1}/".format(
+            self.condition, self.mouse[1])
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'{}.xlsx'.format(self.phase)
-        self.events_path_1 = "C:/Users/MurthyLab/Desktop/Selina_lab_computer_data/experiment_data_2020_5_{0}/{1}/".format(self.condition, self.mouse[1])
+
         self.filename_0 = self.events_path_0 + self.events_filename
         self.filename_1 = self.events_path_1 + self.events_filename
 
@@ -98,7 +101,8 @@ class SelinaTraining(Measurement):
         self.duration_rec_on_after = 1
         self.duration_ITI = np.random.exponential(1, size=self.numtrials)
 
-        self.waterline = 0
+        self.waterline_0 = 0
+        self.waterline_1 = 1
 
 
     def run(self):
@@ -106,15 +110,18 @@ class SelinaTraining(Measurement):
             os.makedirs(self.events_path_0)
             os.makedirs(self.events_path_1)
         except OSError:
-            print("The directory %s existed" % self.events_path)
+            print("The directory %s existed" % self.events_path_0)
         else:
-            print("Successfully created the directory %s " % self.events_path)
+            print("Successfully created the directory %s " % self.events_path_0)
         logname_0 = self.filename_0[0:-5] + '.log'
         logname_1 = self.filename_1[0:-5] + '.log'
         logging.basicConfig(filename=logname_0, level=logging.DEBUG)
         logging.info(self.__dict__)
         logging.basicConfig(filename=logname_1, level=logging.DEBUG)
         logging.info(self.__dict__)
+        self.lick_0 = DAQSimpleDITask('Dev2_SELECT/port2/line0')
+        self.lick_1 = DAQSimpleDITask('Dev2_SELECT/port2/line1')
+        print('water done')
         odors_cue = OdorGen(self.list)
         odors_cue.assign_odor()
         self.reward_odor, self.non_reward_odor, self.control_odor = odors_cue.set_rewardodor(index=self.odor_index)
@@ -122,12 +129,13 @@ class SelinaTraining(Measurement):
         # odors_cue.odors_DAQ[i]
         print('odor done')
 
-        self.waterR = DAQSimpleDOTask('Dev2_SELECT/port0/line{}'.format(self.waterline))
-        self.waterR.low()
+        self.water_0 = DAQSimpleDOTask('Dev2_SELECT/port0/line{}'.format(self.waterline_0))
+        self.water_0.low()
+        self.water_1 = DAQSimpleDOTask('Dev2_SELECT/port0/line{}'.format(self.waterline_1))
+        self.water_1.low()
         # self.OdorOnCopy = DAQSimpleDOTask('Dev3/port2/line5')
         # self.OdorOnCopy.low()
-        self.lickR = DAQSimpleDITask('Dev2_SELECT/port1/line0')
-        print('water done')
+
 
         # EVENT CODES
         # video recording start / start trial = 101
@@ -224,36 +232,58 @@ class SelinaTraining(Measurement):
             self.wb1.save(self.filename_1)
         odors_cue.initiate()
         odors_cue.close()
-        self.waterR.low()
-        self.waterR.close()
+        self.water_0.low()
+        self.water_0.close()
+        self.water_1.low()
+        self.water_1.close()
         print('FINISHED ASSOCIATION TRAINING')
 
     def check_licking_1spout(self, interval,check_action=False):
-        checkperiod = 0.005
+        checkperiod = 0.002
         timeout = time.time() + interval
         reward_on = True # this is used for Pav or Operant
         right_lick_last = 0
+        left_lick_last = 0
         count = 0
         while time.time() < timeout:
-            right_lick = self.lickR.read()
+            right_lick = self.lick_0.read()
+            # print('right lick', right_lick)
+
+            left_lick = self.lick_1.read()
+            # print('left lick', left_lick)
             if right_lick != right_lick_last:
                 if right_lick:
-                    print('Lick')
+                    print('Lick 0')
                     d0 = self.ws0.cell(row=(self.ws0.max_row + 1), column=1, value=time.clock())
                     d0= self.ws0.cell(row=self.ws0.max_row, column=2, value=11)
-                    d1 = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
-                    d1 = self.ws1.cell(row=self.ws1.max_row, column=2, value=11)
+
                 # self.save_training()
                     if check_action:
                         count += 1
                 else:
                     d0 = self.ws0.cell(row=(self.ws0.max_row + 1), column=1, value=time.clock())
                     d0 = self.ws0.cell(row=self.ws0.max_row, column=2, value=10)
-                    d1 = self.ws1.cell(row=(self.ws1.max_row+1), column=1, value=time.clock())
+
+            else:
+                pass
+
+            if left_lick != left_lick_last:
+                if left_lick:
+                    print('Lick 1')
+                    d1 = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
+                    d1 = self.ws1.cell(row=self.ws1.max_row, column=2, value=11)
+
+                    # self.save_training()
+                    if check_action:
+                        count += 1
+                else:
+                    d1 = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
                     d1 = self.ws1.cell(row=self.ws1.max_row, column=2, value=10)
+
             else:
                 pass
             right_lick_last = right_lick
+            left_lick_last = left_lick
             time.sleep(checkperiod)
         if check_action and count >= self.licknum:
 
@@ -358,7 +388,7 @@ class SelinaTraining(Measurement):
             self.run_reward_module(reward_on, w_code)
         self.counter[types] += 1
 
-        self.wb1.save(self.filename)
+
 
     def run_odor_module(self, odor_on, is_go, is_control, r_code):
         if odor_on:
@@ -394,14 +424,17 @@ class SelinaTraining(Measurement):
         if reward_on:
             # modify! give water if licks three times within 1 s
             print('opening water valve')
-            self.waterR.high()
+            self.water_0.high()
+            self.water_1.high()
+
             d0 = self.ws0.cell(row=(self.ws0.max_row + 1), column=1, value=time.clock())
             d0 = self.ws0.cell(row=self.ws0.max_row, column=2, value=w_code[0])
             d1 = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
             d1 = self.ws1.cell(row=self.ws1.max_row, column=2, value=w_code[0])
             self.check_licking_1spout(self.duration_water_large)  # this parameter hasn't een defined
             print('closing water valve')
-            self.waterR.low()
+            self.water_0.low()
+            self.water_1.low()
             d0 = self.ws0.cell(row=(self.ws0.max_row + 1), column=1, value=time.clock())
             d0 = self.ws0.cell(row=self.ws0.max_row, column=2, value=w_code[1])
             d1 = self.ws1.cell(row=(self.ws1.max_row + 1), column=1, value=time.clock())
@@ -425,11 +458,6 @@ class SelinaTraining(Measurement):
 #         except Exception as ex:
 #             print('Error : %s' % ex)
 
-    def save_training(self):
-        with open(self.filename_0, 'wb') as output:
-            pickle.dump(self, output, pickle.HIGHEST_PROTOCOL)
-        with open(self.filename_1, 'wb') as output:
-            pickle.dump(self, output, pickle.HIGHEST_PROTOCOL)
 
 
 
