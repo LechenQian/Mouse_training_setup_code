@@ -55,15 +55,15 @@ class OdorGen(object):
 class SelinaTraining(Measurement):
     def __init__(self):
         # please change this according to mouse
-        # this is for   RIG 1  RIG 1  RIG 1  RIG 1!!!!!!
-        self.mouse = 'C53'  #OT-GC-2
+        # RIG 1  RIG 1  RIG 1  RIG 1!!!!!!
+        self.mouse = 'C61'  #OT-GC-2
 
-        self.phase = 'cond' #'cond', 'deg','C_control','close','far'
+        self.phase = 'deg' #'cond', 'deg','C_control','close','far'
         self.condition = 'Pav'
         self.numtrials = 120
 
         self.list = [7, 6, 5]
-        self.events_path = "C:/Users/MurthyLab/Desktop/Selina_lab_computer_data/experiment_data_2021_7_{0}/{1}/".format(self.condition,self.mouse)
+        self.events_path = "C:/Users/MurthyLab/Desktop/Selina_lab_computer_data/experiment_data_2021_8_{0}/{1}/".format(self.condition,self.mouse)
         self.events_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")+'{}.xlsx'.format(self.phase)
         self.odor_index = [1,0,2] #odor list index position 0 is reward, 1 is unrewarded, 2 is control c odor; so here, 7 is unrewarded, 6 is reward and 5 is c odor
         if self.condition == 'Operant':
